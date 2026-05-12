@@ -1,0 +1,21 @@
+# macOS
+.DS_Store
+
+# Database / vector store files
+*.db
+*.rvf
+*.rvf.lock
+
+# Node
+node_modules/
+dist/
+
+# Environment / secrets
+.env
+.env.local
+
+# Editor
+.idea/
+.vscode/
+*.suo
+*.sw?

@@ -1,0 +1,26 @@
+[
+  {
+    "date": "2024-05-10",
+    "crude_type": "Brent",
+    "price_usd": 83.88,
+    "unit": "per barrel",
+    "source": "EIA",
+    "source_url": "https://www.eia.gov/opendata/browser/petroleum/pri/spt/data/?frequency=daily&data[0]=value&facets[series][]=RBRTE"
+  },
+  {
+    "date": "2024-05-10",
+    "crude_type": "WTI",
+    "price_usd": 79.26,
+    "unit": "per barrel",
+    "source": "EIA",
+    "source_url": "https://www.eia.gov/opendata/browser/petroleum/pri/spt/data/?frequency=daily&data[0]=value&facets[series][]=RWTC"
+  },
+  {
+    "date": "2024-05-01",
+    "crude_type": "Dubai",
+    "price_usd": 84.15,
+    "unit": "per barrel",
+    "source": "World Bank",
+    "source_url": "https://www.worldbank.org/en/research/commodity-markets"
+  }
+]

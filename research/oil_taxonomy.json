@@ -1,0 +1,44 @@
+{
+  "crude_types": {
+    "benchmarks": [
+      { "id": "brent", "label": "Brent Crude", "region": "Europe/Africa/Middle East", "source": "EIA" },
+      { "id": "wti", "label": "West Texas Intermediate", "region": "Americas", "source": "EIA" },
+      { "id": "dubai", "label": "Dubai/Oman", "region": "Asia/Middle East", "source": "World Bank" }
+    ],
+    "grades": [
+      { "id": "light_sweet", "description": "Low density, low sulfur" },
+      { "id": "medium_sour", "description": "Medium density, higher sulfur" },
+      { "id": "heavy_sour", "description": "High density, high sulfur" }
+    ]
+  },
+  "event_taxonomy": {
+    "primary_types": [
+      "opec",
+      "conflict",
+      "sanction",
+      "infrastructure",
+      "trade",
+      "economic"
+    ],
+    "confidence_levels": [
+      "high",
+      "medium",
+      "low"
+    ]
+  },
+  "geopolitical_categories": {
+    "groups": [
+      { "id": "opec", "label": "OPEC", "description": "Organization of the Petroleum Exporting Countries" },
+      { "id": "opec_plus", "label": "OPEC+", "description": "OPEC plus allied producers (Russia, etc.)" },
+      { "id": "oecd", "label": "OECD", "description": "Organization for Economic Co-operation and Development" },
+      { "id": "brics", "label": "BRICS", "description": "Brazil, Russia, India, China, South Africa" }
+    ]
+  },
+  "supply_chain_categories": [
+    "upstream",
+    "midstream",
+    "downstream",
+    "shipping",
+    "storage"
+  ]
+}

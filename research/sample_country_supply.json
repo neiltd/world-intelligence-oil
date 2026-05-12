@@ -1,0 +1,34 @@
+[
+  {
+    "country": "Saudi Arabia",
+    "iso3": "SAU",
+    "year": 2023,
+    "reserves": 267.19,
+    "production": 9607.0,
+    "exports": 6600.0,
+    "imports": 0.0,
+    "unit_reserves": "billion barrels",
+    "unit_production": "thousand barrels/day",
+    "unit_exports": "thousand barrels/day",
+    "unit_imports": "thousand barrels/day",
+    "opec_member": true,
+    "source": "EIA",
+    "source_url": "https://api.eia.gov/v2/international/data/"
+  },
+  {
+    "country": "United States",
+    "iso3": "USA",
+    "year": 2023,
+    "reserves": 55.25,
+    "production": 12933.0,
+    "exports": 4000.0,
+    "imports": 6000.0,
+    "unit_reserves": "billion barrels",
+    "unit_production": "thousand barrels/day",
+    "unit_exports": "thousand barrels/day",
+    "unit_imports": "thousand barrels/day",
+    "opec_member": false,
+    "source": "EIA",
+    "source_url": "https://api.eia.gov/v2/international/data/"
+  }
+]
