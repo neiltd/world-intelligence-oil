@@ -186,26 +186,54 @@ The map choropleth uses a **color-injection pattern**: `WorldMap.tsx` fetches `c
 
 ## Geocoordinate Architecture
 
-Hub-enriched events carry `GeoCoordinate | null` on every record:
+Hub-enriched events carry `GeoCoordinate | null` on every record.
 
-```ts
-interface GeoCoordinate {
-  latitude:           number
-  longitude:          number
-  coordinate_quality: 'exact' | 'city' | 'country_centroid' | 'regional'
-  location_type:      'chokepoint' | 'port' | 'pipeline' | 'refinery' | 'oilfield' | 'city' | 'country' | 'region'
-  confidence:         number   // 0.0–1.0
-  source:             'ACLED' | 'GDELT' | 'manual' | 'geocoded'
-  place_name?:        string | null
-}
+### Oil frontend responsibilities (approved by Hub PM)
+
+```
+✅ Render event markers at hub-provided coordinates
+✅ Style markers by coordinateQuality
+✅ Show tooltip: title, event_type, confidence, source
+✅ Skip events where geo === null (omit from map, still show in timeline)
+✅ Handle empty hub arrays gracefully (no crash, no spinner forever)
+
+❌ Do NOT geocode
+❌ Do NOT infer or fill in missing coordinates
+❌ Do NOT modify coordinateQuality
+❌ Do NOT enrich events client-side
+❌ Do NOT build clustering, proximity logic, or route visualization yet
 ```
 
-**Rendering strategy:**
-- `geo === null` → country-level only → choropleth color on ISO3 polygon
-- `geo.coordinate_quality === 'exact'` → precise map marker (conflict, refinery strike)
-- `geo.coordinate_quality === 'city'` → city-level marker
-- `geo.coordinate_quality === 'country_centroid'` → soft marker on country center
-- `geo.coordinate_quality === 'regional'` → zone highlight (Hormuz, Red Sea)
+### Marker style rules (by coordinateQuality)
+
+| coordinateQuality | Visual treatment |
+|-------------------|-----------------|
+| `"exact"` | Solid, precise dot — full opacity, sharp border |
+| `"city"` | Solid dot — slightly reduced opacity (0.8) |
+| `"country_centroid"` | Soft/glowing ring — low opacity, dashed border, signals imprecision |
+| `"regional"` | Larger radius zone indicator — semi-transparent fill |
+| `null` / missing | **Omit from map** — event still appears in OilEventTimeline |
+
+### Tooltip content (when geo is present)
+
+```
+[event_type badge]  [coordinateQuality indicator]
+Event title
+Country · confidence%
+Source: ACLED · source_count outlets
+```
+
+No client-side logic beyond reading hub-provided values. The hub decides where events are. The frontend renders what it receives.
+
+### Implementation note
+
+Event marker layer is **not yet built**. When built:
+1. Read from `getOilEvents()` (adapter) — hub data only
+2. Filter to `event.geo !== null`
+3. Render one `<Marker>` per event using `geo.latitude` / `geo.longitude`
+4. Style marker radius/opacity based on `geo.coordinate_quality`
+5. Show tooltip on hover with above fields
+6. Do not mutate or re-interpret hub coordinates
 
 ---
 

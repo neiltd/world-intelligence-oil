@@ -37,6 +37,47 @@ world-intelligence-oil
 
 ---
 
+## Coordinate Visualization Contract (approved 2026-05-14)
+
+The hub geocodes. The oil project renders. This division is final.
+
+### What the oil frontend does with coordinates
+
+| Responsibility | Oil frontend |
+|----------------|-------------|
+| Render markers at hub-provided lat/lng | ✅ |
+| Style markers by `coordinate_quality` | ✅ |
+| Show tooltip: title, event_type, confidence, source | ✅ |
+| Skip `geo: null` events on map (still show in timeline) | ✅ |
+| Geocode missing coordinates | ❌ |
+| Infer or fill in coordinates | ❌ |
+| Modify `coordinate_quality` | ❌ |
+| Enrich events client-side | ❌ |
+| Build clustering, proximity, or routing logic | ❌ (not yet) |
+
+### Marker rendering by coordinateQuality
+
+| Value | Visual | Meaning |
+|-------|--------|---------|
+| `"exact"` | Solid precise dot, full opacity | ACLED GPS-level |
+| `"city"` | Solid dot, 0.8 opacity | GDELT city centroid |
+| `"country_centroid"` | Soft ring, dashed, low opacity | Country-level fallback — imprecise |
+| `"regional"` | Large semi-transparent zone | Maritime area (Hormuz, Red Sea) |
+| `null` | **Omit from map entirely** | No geo — country choropleth only |
+
+### Tooltip fields (read-only from hub)
+
+```
+event_type  ·  coordinateQuality indicator
+title
+iso3  ·  confidence%
+source  ·  place_name (if set)
+```
+
+The hub is the authority on coordinates. The frontend never re-interprets them.
+
+---
+
 ## Global Standards
 
 | Standard | Value |
