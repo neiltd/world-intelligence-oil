@@ -1,8 +1,30 @@
 import { create } from 'zustand'
 import type { Country } from '../types/country'
 import type { OilLayerMetric, EventType } from '../types/oil'
+import type { HubCoordinateQuality } from '../types/hub'
 
 export type { OilLayerMetric }
+
+// ─── Hub event filter state ───────────────────────────────────────────────────
+// Centralised so the filter bar and the marker layer share the same state.
+// Filters apply only to hub event markers (OilEventMarkerLayer), not to the
+// OilEventTimeline which uses the legacy OilEventRecord[] data source.
+
+export interface HubEventFilters {
+  severityMin:   number                      // 1–5; 1 = show all
+  eventType:     string | null               // null = all hub event types
+  hormuzOnly:    boolean                     // only is_hormuz_related events
+  supplyOnly:    boolean                     // only is_supply_disruption events
+  qualityFilter: HubCoordinateQuality | null // null = all coordinate qualities
+}
+
+export const DEFAULT_HUB_FILTERS: HubEventFilters = {
+  severityMin:   1,
+  eventType:     null,
+  hormuzOnly:    false,
+  supplyOnly:    false,
+  qualityFilter: null,
+}
 
 interface MapStore {
   // Country selection
@@ -24,18 +46,20 @@ interface MapStore {
   oilMetric: OilLayerMetric
   setOilMetric: (metric: OilLayerMetric) => void
 
-  // Active event — the event currently expanded/focused in the timeline.
-  // Shared so OilPriceChart can highlight the corresponding reference line.
-  // null = no event active.
+  // Active event — focused event shared between marker layer, chart, and timeline
   activeEventId: string | null
   setActiveEventId: (id: string | null) => void
 
-  // Event filters — centralized so any component can read or set them
-  // null = no filter active (show all)
+  // Legacy OilEventTimeline filters (OilEventRecord schema)
   filterYear: number | null
   setFilterYear: (year: number | null) => void
   filterEventType: EventType | null
   setFilterEventType: (type: EventType | null) => void
+
+  // Hub event marker filters (HubOilEvent schema — separate from timeline filters)
+  hubEventFilters: HubEventFilters
+  setHubEventFilters: (patch: Partial<HubEventFilters>) => void
+  resetHubEventFilters: () => void
 
   // Extensible layer visibility — keyed by layer ID
   layerVisibility: Record<string, boolean>
@@ -86,19 +110,22 @@ export const useMapStore = create<MapStore>((set) => ({
 
   clearCompare: () => set({ compareCountryId: null, compareData: null }),
 
-  // Oil layer — production by default (reserves=null in live EIA data)
   oilMetric: 'production',
   setOilMetric: (metric) => set({ oilMetric: metric }),
 
-  // Active event — none on load
   activeEventId: null,
   setActiveEventId: (id) => set({ activeEventId: id }),
 
-  // Event filters — all unset by default
   filterYear: null,
   setFilterYear: (year) => set({ filterYear: year }),
   filterEventType: null,
   setFilterEventType: (type) => set({ filterEventType: type }),
+
+  // Hub event marker filters
+  hubEventFilters: { ...DEFAULT_HUB_FILTERS },
+  setHubEventFilters: (patch) =>
+    set(s => ({ hubEventFilters: { ...s.hubEventFilters, ...patch } })),
+  resetHubEventFilters: () => set({ hubEventFilters: { ...DEFAULT_HUB_FILTERS } }),
 
   layerVisibility: { oil: true },
   setLayerVisible: (id, visible) =>
@@ -112,6 +139,6 @@ export const useMapStore = create<MapStore>((set) => ({
   showIntelligence: false,
   toggleIntelligence: () => set(s => ({ showIntelligence: !s.showIntelligence })),
 
-  showEventMarkers: true,   // on by default — hub has 38 geocoordinated events
+  showEventMarkers: true,
   toggleEventMarkers: () => set(s => ({ showEventMarkers: !s.showEventMarkers })),
 }))

@@ -8,6 +8,16 @@ import { useMapStore } from '../../store/useMapStore'
 import { fixFeatureCollection } from '../../utils/geoUtils'
 import OilMapLayer, { getOilChoroplethColor, getOilTooltipData } from './OilMapLayer'
 import OilEventMarkerLayer from './OilEventMarkerLayer'
+import HubEventFilterBar from './HubEventFilterBar'
+import { getHubOilEvents } from '../../data/imports/adapter'
+
+// Hub event lookup — used for active event ISO3 country glow (module level, no fetch)
+// Using Record instead of Map to avoid conflict with the react-map-gl Map import
+const _hubByID: Record<string, ReturnType<typeof getHubOilEvents>[number]> =
+  Object.fromEntries(getHubOilEvents().map(e => [e.event_id, e]))
+
+// Subtle amber tint on the active hub event's country — distinct from selected blue
+const ACTIVE_EVENT_COUNTRY_COLOR = '#78350F'
 
 const MAP_STYLE = 'https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json'
 
@@ -56,7 +66,11 @@ export default function WorldMap() {
   const {
     selectedCountryId, countryData, compareData, selectCountry,
     oilMetric, isLayerVisible, showEventMarkers,
+    activeEventId, setActiveEventId,
   } = useMapStore()
+
+  // ISO3 of the focused hub event — for the subtle country glow
+  const activeEventISO3 = activeEventId ? (_hubByID[activeEventId]?.iso3 ?? null) : null
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [countriesGeo, setCountriesGeo] = useState<any>(null)
@@ -98,13 +112,11 @@ export default function WorldMap() {
 
   // ── Choropleth color computation ─────────────────────────────────────────────
   // Priority (highest wins):
-  //   1. Selected country  → blue
-  //   2. Compare country   → purple
-  //   3. Oil layer active  → choropleth color from OilMapLayer
-  //   4. Fallback          → base dark color
-  //
-  // This means clicking a country always shows blue regardless of oil layer state,
-  // preserving existing CountryPanel behavior.
+  //   1. Selected country     → blue (#2563EB)
+  //   2. Compare country      → purple (#8B5CF6)
+  //   3. Active hub event ISO3 → subtle dark amber (#78350F) — map focus for focused event
+  //   4. Oil layer active     → choropleth from OilMapLayer
+  //   5. Fallback             → base dark
 
   const geoWithColors = useMemo(() => {
     if (!countriesGeo) return null
@@ -114,24 +126,29 @@ export default function WorldMap() {
       features: countriesGeo.features.map((f: any) => {
         const iso3: string | null = f.properties?.iso3
 
-        // Selected / compare overrides always win.
-        // Use selectedCountryId (not countryData?.id) so highlight persists even
-        // when the country JSON failed to load (e.g. clicking "View on map" for a
-        // country not yet in data/countries/).
-        if (iso3 === selectedCountryId) return { ...f, properties: { ...f.properties, color: '#2563EB' } }
-        if (iso3 === compareData?.id)   return { ...f, properties: { ...f.properties, color: '#8B5CF6' } }
+        if (iso3 === selectedCountryId)  return { ...f, properties: { ...f.properties, color: '#2563EB' } }
+        if (iso3 === compareData?.id)    return { ...f, properties: { ...f.properties, color: '#8B5CF6' } }
 
-        // Oil choropleth
+        // Subtle country glow for the active hub event's primary ISO3
+        // Only when the country isn't already selected or compared
+        if (
+          activeEventISO3 &&
+          iso3 === activeEventISO3 &&
+          iso3 !== selectedCountryId &&
+          iso3 !== compareData?.id
+        ) {
+          return { ...f, properties: { ...f.properties, color: ACTIVE_EVENT_COUNTRY_COLOR } }
+        }
+
         if (oilLayerActive && iso3) {
           return { ...f, properties: { ...f.properties, color: getOilChoroplethColor(iso3, oilMetric) } }
         }
 
-        // Base
         const color = iso3 ? BASE_COLOR : EMPTY_COLOR
         return { ...f, properties: { ...f.properties, color } }
       }),
     }
-  }, [countriesGeo, selectedCountryId, compareData, oilLayerActive, oilMetric])
+  }, [countriesGeo, selectedCountryId, compareData, activeEventISO3, oilLayerActive, oilMetric])
 
   const handleMouseMove = useCallback((e: MapMouseEvent) => {
     const f = e.features?.[0]
@@ -148,10 +165,12 @@ export default function WorldMap() {
 
   const handleClick = useCallback((e: MapMouseEvent) => {
     const f = e.features?.[0]
+    // Clicking empty map or a country clears the active hub event focus
+    setActiveEventId(null)
     if (!f) return
     const iso3 = f.properties?.iso3
     if (iso3) selectCountry(iso3)
-  }, [selectCountry])
+  }, [selectCountry, setActiveEventId])
 
   // Build tooltip oil data only when layer is active and we have an iso3
   const tooltipOilData = useMemo(() => {
@@ -188,8 +207,11 @@ export default function WorldMap() {
         <NavigationControl position="top-right" showCompass={false} />
       </Map>
 
-      {/* Oil choropleth legend — rendered as DOM overlay inside map container */}
+      {/* Oil choropleth legend */}
       {oilLayerActive && <OilMapLayer metric={oilMetric} />}
+
+      {/* Hub event filter bar — only when markers are visible */}
+      {showEventMarkers && <HubEventFilterBar />}
 
       {/* Hover tooltip */}
       {tooltip && (

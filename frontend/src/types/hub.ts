@@ -56,6 +56,7 @@ export type HubRelatedAsset = 'oil' | 'gas' | 'chokepoint' | 'infrastructure'
 
 export interface HubOilEvent {
   event_id:             string
+  storyline_id?:        string              // links events in a cross-day narrative — absent for emerging events
   date:                 string              // ISO 8601 YYYY-MM-DD
   title:                string
   summary:              string
