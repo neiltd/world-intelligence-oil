@@ -1,11 +1,30 @@
 # Technical Debt — Oil Intelligence Frontend
 
-Tracked as of 2026-05-12 (post-Step 5 review pass).
+Tracked as of 2026-05-14. Updated with ecosystem architecture classification.
 
 Items are classified by urgency:
 - **Critical** — causes a bug or will block the next step
 - **Moderate** — causes friction, will compound as the codebase grows
 - **Low** — cosmetic, naming, or organizational preference
+
+---
+
+## Ingestion Scripts — Architecture Classification
+
+`scripts/` contains Python ingestion scripts that call EIA directly. These are **local fallback / bootstrapping tools only** — they are NOT the primary production architecture.
+
+| Script | Classification | Action Required |
+|--------|---------------|-----------------|
+| `scripts/ingest.py` | Local fallback CLI | Keep for local dev; hub supersedes in production |
+| `scripts/ingestion/ingest_prices.py` | LOCAL FALLBACK — calls EIA API | Migrate to hub; remove once hub delivers `price-series.json` |
+| `scripts/ingestion/ingest_supply.py` | LOCAL FALLBACK — calls EIA API | Migrate to hub; remove once hub delivers `energy-indicators.json` |
+| `scripts/ingestion/ingest_reserves_owid.py` | LOCAL FALLBACK — reads seed CSV | Migrate to hub; hub will enrich from EI Statistical Review |
+| `scripts/ingestion/eia_client.py` | LOCAL FALLBACK — EIA HTTP client | Belongs in hub project, not here |
+| `scripts/ingestion/normalise.py` | LOCAL FALLBACK — normalization logic | Belongs in hub project |
+| `scripts/ingestion/schema.py` | LOCAL FALLBACK — Pydantic models | Hub owns validation; keep only if needed for local testing |
+| `scripts/data/reserves_ei_2023.csv` | Seed data | Keep committed; useful reference even after hub is live |
+
+**Migration path:** When hub begins delivering `data/imports/*.json` files populated with real data, the adapter automatically uses hub data. Scripts can then be archived or removed.
 
 ---
 

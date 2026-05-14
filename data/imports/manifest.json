@@ -1,51 +1,73 @@
 {
-  "schema_version": "1.0",
-  "generated_by": "world-intelligence-hub",
+  "schema_version": "1.1",
+  "generated_by": "world-intelligence-data-hub",
   "generated_at": null,
   "hub_version": null,
   "datasets": {
+    "price-series": {
+      "file": "price-series.json",
+      "status": "pending",
+      "description": "Crude oil spot prices by date and crude type (Brent, WTI, Dubai)",
+      "schema": "OilPriceRecord[]",
+      "primary_sources": ["EIA", "WorldBank"]
+    },
     "energy-indicators": {
       "file": "energy-indicators.json",
       "status": "pending",
       "description": "Country oil reserves, production, exports, imports by year",
       "schema": "OilCountrySupplyRecord[]",
-      "expected_fields": ["iso3", "year", "reserves", "production", "exports", "imports", "opec_member"],
-      "units": { "reserves": "Bbbl", "production": "kb/d", "exports": "kb/d", "imports": "kb/d" },
-      "source_precedence": ["EIA", "EnergyInstitute", "WorldBank"]
+      "primary_sources": ["EIA", "EnergyInstitute"]
     },
-    "price-series": {
-      "file": "price-series.json",
+    "oil-events": {
+      "file": "oil-events.json",
       "status": "pending",
-      "description": "Crude oil spot prices by date and crude type",
-      "schema": "OilPriceRecord[]",
-      "expected_fields": ["date", "crude_type", "price_usd", "unit", "frequency", "source"],
-      "units": { "price_usd": "USD/bbl" },
-      "source_precedence": ["EIA", "WorldBank"]
-    },
-    "events": {
-      "file": "events.json",
-      "status": "pending",
-      "description": "Oil-related geopolitical events (OPEC decisions, conflicts, sanctions, infrastructure)",
+      "description": "Oil-related geopolitical events with geocoordinates. Supersedes events.json.",
       "schema": "OilEventRecord[]",
-      "expected_fields": ["event_id", "date", "iso3", "event_type", "title", "summary", "source", "confidence_level"],
-      "taxonomy": {
-        "event_types": ["opec", "conflict", "sanction", "infrastructure", "trade", "economic", "weather", "accident"],
-        "confidence_levels": ["high", "medium", "low"],
-        "deduplication_key": ["date", "iso3", "event_type"]
-      },
-      "source_precedence": ["EIA", "OPEC", "OFAC", "ACLED", "IMFPortWatch", "manual"]
+      "primary_sources": ["OPEC", "OFAC", "ACLED", "GDELT", "EIA"],
+      "geo_enriched": true,
+      "deduplication_key": ["date", "iso3", "event_type"]
+    },
+    "shipping-disruptions": {
+      "file": "shipping-disruptions.json",
+      "status": "pending",
+      "description": "Chokepoint and shipping lane disruptions with geo",
+      "schema": "ShippingDisruption[]",
+      "primary_sources": ["IMFPortWatch", "ACLED"],
+      "geo_enriched": true
+    },
+    "refinery-outages": {
+      "file": "refinery-outages.json",
+      "status": "pending",
+      "description": "Refinery and processing facility outages with geo",
+      "schema": "RefineryOutage[]",
+      "primary_sources": ["EIA", "ACLED", "NewsAPI"],
+      "geo_enriched": true
+    },
+    "geopolitical-supply-risk-events": {
+      "file": "geopolitical-supply-risk-events.json",
+      "status": "pending",
+      "description": "Scored geopolitical risk events affecting oil supply chains",
+      "schema": "GeopoliticalSupplyRiskEvent[]",
+      "primary_sources": ["ACLED", "GDELT", "OFAC"],
+      "geo_enriched": true
     },
     "macro-indicators": {
       "file": "macro-indicators.json",
       "status": "planned",
-      "description": "Country-level macroeconomic indicators (GDP, inflation, trade balance)",
+      "description": "Country-level macroeconomic indicators",
       "schema": "MacroIndicatorRecord[]",
-      "expected_fields": ["iso3", "year", "gdp_usd", "inflation_pct", "current_account_pct_gdp"],
-      "source_precedence": ["WorldBank", "IMF"]
+      "primary_sources": ["WorldBank", "IMF"]
+    },
+    "events": {
+      "file": "events.json",
+      "status": "deprecated",
+      "description": "DEPRECATED — use oil-events.json instead. No geo coordinates.",
+      "schema": "OilEventRecord[]"
     }
   },
-  "null_convention": "null means unknown or unavailable — never use 0 for missing",
+  "null_convention": "null = unknown or unavailable — never use 0 for missing",
   "geography_standard": "ISO3 (alpha-3) only",
-  "date_standard": "ISO 8601 — YYYY-MM for monthly, YYYY-MM-DD for daily, integer for annual",
-  "contact": "See DATA_CONTRACT.md for field-level documentation"
+  "date_standard": "ISO 8601 — YYYY-MM monthly, YYYY-MM-DD daily, integer annual",
+  "geo_standard": "WGS84 decimal degrees — see GeoCoordinate in types/oil.ts",
+  "contact": "See data/imports/HUB_CONTRACT.md for full field documentation"
 }

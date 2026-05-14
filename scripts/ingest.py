@@ -1,10 +1,29 @@
 """
-Oil Intelligence — data ingestion CLI.
+╔══════════════════════════════════════════════════════════════════════════════╗
+║  LOCAL FALLBACK ONLY — NOT PRIMARY PRODUCTION ARCHITECTURE                  ║
+║                                                                              ║
+║  These scripts are a development bootstrap for the world-intelligence-oil   ║
+║  project. They call EIA and other external APIs directly, which is AGAINST  ║
+║  the final ecosystem architecture.                                          ║
+║                                                                              ║
+║  Production data ingestion belongs exclusively in:                          ║
+║    world-intelligence-data-hub                                               ║
+║                                                                              ║
+║  These scripts should be run only when:                                     ║
+║    - the data hub is not yet connected to this project, OR                  ║
+║    - developing/testing locally without the hub running                     ║
+║                                                                              ║
+║  When the hub is live, frontend/src/data/imports/adapter.ts automatically  ║
+║  prioritizes hub data over the local live/ fallback this produces.          ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Oil Intelligence — local fallback ingestion CLI.
 
 Usage (run from the repository root):
     python scripts/ingest.py prices    # EIA Brent + WTI monthly prices
-    python scripts/ingest.py supply    # EIA reserves + production by country
-    python scripts/ingest.py all       # both, in dependency order
+    python scripts/ingest.py supply    # EIA production by country
+    python scripts/ingest.py reserves  # EI reserves from seed CSV
+    python scripts/ingest.py all       # all three, in order
 
 Prerequisites:
     cd scripts
