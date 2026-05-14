@@ -7,6 +7,7 @@ import * as topojson from 'topojson-client'
 import { useMapStore } from '../../store/useMapStore'
 import { fixFeatureCollection } from '../../utils/geoUtils'
 import OilMapLayer, { getOilChoroplethColor, getOilTooltipData } from './OilMapLayer'
+import OilEventMarkerLayer from './OilEventMarkerLayer'
 
 const MAP_STYLE = 'https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json'
 
@@ -54,7 +55,7 @@ type TooltipState = {
 export default function WorldMap() {
   const {
     selectedCountryId, countryData, compareData, selectCountry,
-    oilMetric, isLayerVisible,
+    oilMetric, isLayerVisible, showEventMarkers,
   } = useMapStore()
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -183,6 +184,7 @@ export default function WorldMap() {
             />
           </Source>
         )}
+        <OilEventMarkerLayer visible={showEventMarkers} />
         <NavigationControl position="top-right" showCompass={false} />
       </Map>
 

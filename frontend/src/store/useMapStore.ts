@@ -46,6 +46,10 @@ interface MapStore {
   // Intelligence panel
   showIntelligence: boolean
   toggleIntelligence: () => void
+
+  // Event marker layer (hub geocoordinated events on map)
+  showEventMarkers: boolean
+  toggleEventMarkers: () => void
 }
 
 export const useMapStore = create<MapStore>((set) => ({
@@ -107,4 +111,7 @@ export const useMapStore = create<MapStore>((set) => ({
 
   showIntelligence: false,
   toggleIntelligence: () => set(s => ({ showIntelligence: !s.showIntelligence })),
+
+  showEventMarkers: true,   // on by default — hub has 38 geocoordinated events
+  toggleEventMarkers: () => set(s => ({ showEventMarkers: !s.showEventMarkers })),
 }))

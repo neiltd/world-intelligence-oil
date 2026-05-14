@@ -57,6 +57,6 @@ export function useOilIntelligence(): UseOilIntelligenceResult {
     loading,
     error,
     refresh: () => setTick(t => t + 1),
-    age: data?.generated_at ? humanAge(data.generated_at) : null,
+    age: data?.generatedAt ? humanAge(data.generatedAt) : null,
   }
 }

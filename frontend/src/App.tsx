@@ -36,6 +36,7 @@ export default function App() {
     filterYear, filterEventType,
     selectCountry,
     showIntelligence, toggleIntelligence,
+    showEventMarkers, toggleEventMarkers,
   } = useMapStore()
 
   const showPanel  = !!selectedCountryId
@@ -124,6 +125,20 @@ export default function App() {
         </div>
 
         <div className="flex-1" />
+
+        {/* Event markers toggle */}
+        <button
+          onClick={toggleEventMarkers}
+          className="hidden md:flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] font-medium transition-colors"
+          style={{
+            background: showEventMarkers ? '#EF444422' : '#0E1525',
+            border:     `1px solid ${showEventMarkers ? '#EF4444' : '#1E2D4A'}`,
+            color:      showEventMarkers ? '#EF4444' : '#475569',
+          }}
+        >
+          <span className="w-1.5 h-1.5 rounded-full" style={{ background: showEventMarkers ? '#EF4444' : '#475569' }} />
+          Events
+        </button>
 
         {/* Intelligence toggle */}
         <button
