@@ -19,8 +19,8 @@ const RISK_STYLES: Record<HormuzRiskLevel, { color: string; bg: string; border: 
 }
 
 function HormuzCard({ risk }: { risk: import('../../types/intelligence').HormuzRisk }) {
-  const s = RISK_STYLES[risk.risk_level]
-  const escPct = Math.round(risk.max_escalation * 100)
+  const s = RISK_STYLES[risk.riskLevel]
+  const escPct = Math.round(risk.maxEscalation * 100)
   return (
     <div className="rounded-lg p-3 mb-3 border" style={{ background: s.bg, borderColor: s.border }}>
       <div className="flex items-center justify-between mb-2">
@@ -37,7 +37,7 @@ function HormuzCard({ risk }: { risk: import('../../types/intelligence').HormuzR
         <span className="text-[10px] font-mono" style={{ color: s.color }}>{escPct}%</span>
       </div>
       <p className="text-[10px]" style={{ color: '#475569' }}>
-        {risk.event_ids.length} contributing event{risk.event_ids.length !== 1 ? 's' : ''}
+        {risk.eventIds.length} contributing event{risk.eventIds.length !== 1 ? 's' : ''}
         {!risk.active && ' — passage currently unobstructed'}
       </p>
     </div>
@@ -53,16 +53,16 @@ const DIR_COLORS: Record<string, string> = {
 const DIR_ARROWS: Record<string, string> = { up: '↑', down: '↓', neutral: '→', uncertain: '~' }
 
 function CommodityRow({ sig }: { sig: CommoditySignal }) {
-  const color = DIR_COLORS[sig.signal_direction] ?? '#94A3B8'
-  const arrow = DIR_ARROWS[sig.signal_direction] ?? '~'
+  const color = DIR_COLORS[sig.signalDirection] ?? '#94A3B8'
+  const arrow = DIR_ARROWS[sig.signalDirection] ?? '~'
   const icon  = COMMODITY_ICONS[sig.commodity] ?? '📦'
   return (
     <div className="flex items-center gap-2 py-1.5 px-2 rounded" style={{ background: BG2 }}>
       <span className="text-sm">{icon}</span>
       <span className="text-xs font-medium capitalize flex-1" style={{ color: '#CBD5E1' }}>{sig.commodity}</span>
-      <span className="text-xs font-bold" style={{ color }}>{arrow} {sig.signal_direction}</span>
+      <span className="text-xs font-bold" style={{ color }}>{arrow} {sig.signalDirection}</span>
       <span className="text-[10px]" style={{ color: '#475569' }}>
-        {Math.round(sig.intensity * 100)}% · {sig.event_count}ev
+        {Math.round(sig.intensity * 100)}% · {sig.eventCount}ev
       </span>
     </div>
   )
@@ -88,20 +88,20 @@ function EventRow({ e }: { e: OilIntelEvent }) {
           <p className="text-[11px] leading-snug" style={{ color: '#CBD5E1' }}>{e.title}</p>
           <div className="flex items-center gap-2 mt-0.5" style={{ color: '#475569' }}>
             <span className="text-[10px]">{e.countries.slice(0,3).join(' · ')}</span>
-            {e.is_hormuz_related && (
+            {e.isHormuzRelated && (
               <span className="text-[9px] px-1 rounded" style={{ background: '#450A0A', color: '#EF4444' }}>HORMUZ</span>
             )}
-            {e.is_supply_disruption && (
+            {e.isSupplyDisruption && (
               <span className="text-[9px] px-1 rounded" style={{ background: '#422006', color: '#F97316' }}>SUPPLY</span>
             )}
           </div>
         </div>
         <div className="flex-shrink-0 text-right">
           <div className="text-[10px] font-mono" style={{ color: '#EAB308' }}>
-            esc {Math.round(e.escalation_potential * 100)}%
+            esc {Math.round(e.escalationPotential * 100)}%
           </div>
           <div className="text-[10px]" style={{ color: '#334155' }}>
-            conf {Math.round(e.confidence_score * 100)}%
+            conf {Math.round(e.confidence * 100)}%
           </div>
         </div>
       </div>
@@ -109,13 +109,13 @@ function EventRow({ e }: { e: OilIntelEvent }) {
         <div className="px-2.5 pb-2.5 pt-0 border-t" style={{ borderColor: BORDER }}>
           <p className="text-[11px] leading-relaxed mb-2 mt-2" style={{ color: '#94A3B8' }}>{e.summary}</p>
           <div className="flex flex-wrap gap-1 mb-1">
-            {e.source_ids.map(s => (
+            {e.sourceIds.map(s => (
               <span key={s} className="text-[9px] px-1.5 py-0.5 rounded" style={{ background: '#0D1525', color: '#475569' }}>{s}</span>
             ))}
           </div>
           <div className="flex gap-3 text-[9px]" style={{ color: '#334155' }}>
-            <span className="font-mono">{e.event_id.slice(0,12)}…</span>
-            {e.storyline_id && <span className="font-mono">story:{e.storyline_id.slice(0,8)}…</span>}
+            <span className="font-mono">{e.eventId.slice(0,12)}…</span>
+            {e.storylineId && <span className="font-mono">story:{e.storylineId.slice(0,8)}…</span>}
           </div>
         </div>
       )}
@@ -156,15 +156,15 @@ export default function OilIntelligencePanel({ onClose }: Props) {
     )
   }
 
-  const hormuzEvents = data.energy_events.filter(e => e.is_hormuz_related)
-  const supplyEvents = data.energy_events.filter(e => e.is_supply_disruption)
-  const sorted = [...data.energy_events].sort((a, b) =>
-    b.escalation_potential - a.escalation_potential || b.severity - a.severity,
+  const hormuzEvents = data.energyEvents.filter(e => e.isHormuzRelated)
+  const supplyEvents = data.energyEvents.filter(e => e.isSupplyDisruption)
+  const sorted = [...data.energyEvents].sort((a, b) =>
+    b.escalationPotential - a.escalationPotential || b.severity - a.severity,
   )
 
   const tabs: { id: Tab; label: string }[] = [
     { id: 'hormuz',      label: `Hormuz` },
-    { id: 'events',      label: `Events (${data.event_count})` },
+    { id: 'events',      label: `Events (${data.eventCount})` },
     { id: 'commodities', label: `Commodities` },
   ]
 
@@ -179,11 +179,11 @@ export default function OilIntelligencePanel({ onClose }: Props) {
               <span className="text-sm font-bold text-white">Oil Intelligence</span>
               <span className="text-[9px] px-1.5 py-0.5 rounded font-mono"
                 style={{ background: BG2, color: '#475569', border: `1px solid ${BORDER}` }}>
-                v{data.schema_version}
+                v{data.schemaVersion}
               </span>
             </div>
             <p className="text-[10px] mt-0.5" style={{ color: '#334155' }}>
-              {data.date} · {age} · {data.extraction_version}
+              {data.date} · {age} · {data.extractionVersion}
             </p>
           </div>
           <div className="flex items-center gap-2">
@@ -195,14 +195,14 @@ export default function OilIntelligencePanel({ onClose }: Props) {
         {/* Five monitoring labels */}
         <div className="grid grid-cols-5 gap-1">
           {[
-            { label: 'Verified',    value: data.event_count,           color: '#22C55E' },
-            { label: 'Exc. review', value: data.review_excluded_count,
-              color: data.review_excluded_count > 0 ? '#EAB308' : '#475569' },
-            { label: 'Outlets',     value: data.unique_source_count,   color: '#60A5FA' },
+            { label: 'Verified',    value: data.eventCount,           color: '#22C55E' },
+            { label: 'Exc. review', value: data.reviewExcludedCount,
+              color: data.reviewExcludedCount > 0 ? '#EAB308' : '#475569' },
+            { label: 'Outlets',     value: data.uniqueSourceCount,    color: '#60A5FA' },
             { label: 'Hormuz',      value: hormuzEvents.length,
-              color: data.hormuz_risk.risk_level === 'critical' ? '#EF4444'
-                   : data.hormuz_risk.risk_level === 'high' ? '#F97316' : '#22C55E' },
-            { label: 'Supply',      value: supplyEvents.length,        color: '#F59E0B' },
+              color: data.hormuzRisk.riskLevel === 'critical' ? '#EF4444'
+                   : data.hormuzRisk.riskLevel === 'high' ? '#F97316' : '#22C55E' },
+            { label: 'Supply',      value: supplyEvents.length,       color: '#F59E0B' },
           ].map(({ label, value, color }) => (
             <div key={label} className="text-center rounded p-1" style={{ background: BG2 }}>
               <p className="text-xs font-bold" style={{ color }}>{value}</p>
@@ -234,14 +234,14 @@ export default function OilIntelligencePanel({ onClose }: Props) {
 
         {tab === 'hormuz' && (
           <div>
-            <HormuzCard risk={data.hormuz_risk} />
+            <HormuzCard risk={data.hormuzRisk} />
             <p className="text-[10px] mb-2 font-semibold uppercase tracking-wide" style={{ color: '#475569' }}>
               Hormuz-related events ({hormuzEvents.length})
             </p>
             {hormuzEvents.length === 0
               ? <p className="text-xs text-center mt-4" style={{ color: '#334155' }}>No Hormuz events in current data</p>
-              : hormuzEvents.sort((a, b) => b.escalation_potential - a.escalation_potential)
-                           .map(e => <EventRow key={e.event_id} e={e} />)
+              : hormuzEvents.sort((a, b) => b.escalationPotential - a.escalationPotential)
+                           .map(e => <EventRow key={e.eventId} e={e} />)
             }
           </div>
         )}
@@ -249,19 +249,19 @@ export default function OilIntelligencePanel({ onClose }: Props) {
         {tab === 'events' && (
           <div>
             <p className="text-[10px] mb-2" style={{ color: '#334155' }}>
-              {data.event_count} verified · sorted by escalation · click to expand
+              {data.eventCount} verified · sorted by escalation · click to expand
             </p>
-            {sorted.map(e => <EventRow key={e.event_id} e={e} />)}
+            {sorted.map(e => <EventRow key={e.eventId} e={e} />)}
           </div>
         )}
 
         {tab === 'commodities' && (
           <div>
             <p className="text-[10px] mb-2" style={{ color: '#334155' }}>Signal direction inferred from event content</p>
-            {data.commodity_signals.length === 0
+            {data.commoditySignals.length === 0
               ? <p className="text-xs text-center mt-4" style={{ color: '#334155' }}>No commodity signals</p>
               : <div className="space-y-1">
-                  {data.commodity_signals.map(s => <CommodityRow key={s.commodity} sig={s} />)}
+                  {data.commoditySignals.map(s => <CommodityRow key={s.commodity} sig={s} />)}
                 </div>
             }
             <div className="mt-4 p-3 rounded-lg border" style={{ background: BG2, borderColor: BORDER }}>
@@ -269,7 +269,7 @@ export default function OilIntelligencePanel({ onClose }: Props) {
               <p className="text-[10px] leading-relaxed" style={{ color: '#475569' }}>
                 These signals are for monitoring and analysis only. They are derived from
                 news intelligence and are not automated trading recommendations.
-                {data.review_excluded_count > 0 && ` ${data.review_excluded_count} event(s) excluded pending human review.`}
+                {data.reviewExcludedCount > 0 && ` ${data.reviewExcludedCount} event(s) excluded pending human review.`}
               </p>
             </div>
           </div>
