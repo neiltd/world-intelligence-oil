@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.0",
+  "export_type": "oil-project",
+  "generated_at": "2026-05-14T19:02:00.322Z",
+  "date": "2026-05-14",
+  "extraction_version": "reporter-v1.1",
+  "event_count": 2,
+  "review_excluded_count": 9,
+  "unique_source_count": 2,
+  "hormuz_risk": {
+    "active": false,
+    "risk_level": "low",
+    "max_escalation": 0,
+    "event_ids": [],
+    "updated_at": "2026-05-14T19:02:00.322Z"
+  },
+  "energy_events": [
+    {
+      "event_id": "a104b9a2e298353296bef915",
+      "storyline_id": "5f2def3fe9ef37df",
+      "title": "Gold Prices Volatile as Federal Reserve Rate Path Uncertainty Persists Amid War-Driven US Inflation",
+      "summary": "Gold prices swung between gains and losses as investors assessed the US Federal Reserve's interest-rate trajectory. The volatility followed US economic data showing a war-driven surge in inflation, adding uncertainty to expectations for Fed policy.",
+      "event_type": "commodity_price_move",
+      "severity": 2,
+      "confidence_score": 0.72,
+      "countries": [
+        "USA"
+      ],
+      "escalation_potential": 0.3,
+      "market_relevance": 0.65,
+      "is_supply_disruption": false,
+      "is_hormuz_related": false,
+      "first_seen_at": "2026-05-14T17:48:21.000Z",
+      "source_ids": [
+        "bloomberg-markets"
+      ]
+    },
+    {
+      "event_id": "a3456d851fa5cb2af3f5bc4a",
+      "storyline_id": "5aa09a29192b0d3a",
+      "title": "Iran's Economy in Freefall After 2.5 Months of War: 2M Jobs Lost, Currency Down 60%, Internet Blackout Enters Day 75",
+      "summary": "Iran's economy has suffered a severe collapse after two and a half months of war, with prices for some goods tripling or quadrupling, at least two million people losing their jobs, and the currency losing 60% of its value. The international internet has been shut down for more than 75 days, with no end to the conflict in sight.",
+      "event_type": "humanitarian_crisis",
+      "severity": 4,
+      "confidence_score": 0.78,
+      "countries": [
+        "IRN"
+      ],
+      "escalation_potential": 0.55,
+      "market_relevance": 0.6,
+      "is_supply_disruption": false,
+      "is_hormuz_related": false,
+      "first_seen_at": "2026-05-14T16:44:48.000Z",
+      "source_ids": [
+        "france24-english"
+      ]
+    }
+  ],
+  "commodity_signals": [
+    {
+      "commodity": "oil",
+      "signal_direction": "uncertain",
+      "intensity": 0.417,
+      "event_ids": [
+        "6577de540cf3ae8dc40ef370",
+        "859c88fe5499fb89e9627e87",
+        "bd61c422a8dbb8dbb9337b57"
+      ],
+      "event_count": 3
+    },
+    {
+      "commodity": "gas",
+      "signal_direction": "uncertain",
+      "intensity": 0.5,
+      "event_ids": [
+        "d61148eb0bcab3a66c135849"
+      ],
+      "event_count": 1
+    },
+    {
+      "commodity": "gold",
+      "signal_direction": "uncertain",
+      "intensity": 0.65,
+      "event_ids": [
+        "a104b9a2e298353296bef915"
+      ],
+      "event_count": 1
+    }
+  ]
+}

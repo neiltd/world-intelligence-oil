@@ -19,3 +19,7 @@ dist/
 .vscode/
 *.suo
 *.sw?
+
+__pycache__/
+*.pyc
+*.pyo

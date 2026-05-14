@@ -1,6 +1,6 @@
 import { create } from 'zustand'
 import type { Country } from '../types/country'
-import type { OilLayerMetric } from '../types/oil'
+import type { OilLayerMetric, EventType } from '../types/oil'
 
 export type { OilLayerMetric }
 
@@ -24,11 +24,28 @@ interface MapStore {
   oilMetric: OilLayerMetric
   setOilMetric: (metric: OilLayerMetric) => void
 
+  // Active event — the event currently expanded/focused in the timeline.
+  // Shared so OilPriceChart can highlight the corresponding reference line.
+  // null = no event active.
+  activeEventId: string | null
+  setActiveEventId: (id: string | null) => void
+
+  // Event filters — centralized so any component can read or set them
+  // null = no filter active (show all)
+  filterYear: number | null
+  setFilterYear: (year: number | null) => void
+  filterEventType: EventType | null
+  setFilterEventType: (type: EventType | null) => void
+
   // Extensible layer visibility — keyed by layer ID
   layerVisibility: Record<string, boolean>
   setLayerVisible: (id: string, visible: boolean) => void
   toggleLayerById: (id: string) => void
   isLayerVisible: (id: string) => boolean
+
+  // Intelligence panel
+  showIntelligence: boolean
+  toggleIntelligence: () => void
 }
 
 export const useMapStore = create<MapStore>((set) => ({
@@ -65,9 +82,19 @@ export const useMapStore = create<MapStore>((set) => ({
 
   clearCompare: () => set({ compareCountryId: null, compareData: null }),
 
-  // Oil layer — reserves visible by default
-  oilMetric: 'reserves',
+  // Oil layer — production by default (reserves=null in live EIA data)
+  oilMetric: 'production',
   setOilMetric: (metric) => set({ oilMetric: metric }),
+
+  // Active event — none on load
+  activeEventId: null,
+  setActiveEventId: (id) => set({ activeEventId: id }),
+
+  // Event filters — all unset by default
+  filterYear: null,
+  setFilterYear: (year) => set({ filterYear: year }),
+  filterEventType: null,
+  setFilterEventType: (type) => set({ filterEventType: type }),
 
   layerVisibility: { oil: true },
   setLayerVisible: (id, visible) =>
@@ -77,4 +104,7 @@ export const useMapStore = create<MapStore>((set) => ({
   isLayerVisible: (id: string): boolean => {
     return useMapStore.getState().layerVisibility[id] ?? false
   },
+
+  showIntelligence: false,
+  toggleIntelligence: () => set(s => ({ showIntelligence: !s.showIntelligence })),
 }))

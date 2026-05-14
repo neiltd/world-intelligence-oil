@@ -1,10 +1,21 @@
 import type { OilCountrySupplyRecord, OilLayerMetric } from '../../types/oil'
-import supplyRaw from '../../data/oil/oil_country_supply_sample.json'
+import supplyRaw from '../../data/oil/live/oil_country_supply.json'
 
 // ─── Data lookup ──────────────────────────────────────────────────────────────
+// Live data has multiple years per country. Build a map keyed by ISO3 →
+// the most recent year's record. Explicit year comparison is safe regardless
+// of sort order in the JSON file.
 
 const supply = supplyRaw as OilCountrySupplyRecord[]
-const supplyByISO3 = new Map(supply.map(r => [r.iso3, r]))
+const supplyByISO3 = new Map<string, OilCountrySupplyRecord>()
+for (const r of supply) {
+  const existing = supplyByISO3.get(r.iso3)
+  if (!existing || r.year > existing.year) supplyByISO3.set(r.iso3, r)
+}
+
+// True when every record in the live dataset has null reserves (e.g. EIA does
+// not expose international proved reserves via API — see DATA_CONTRACT.md).
+const reservesUnavailable = supply.every(r => r.reserves === null)
 
 // ─── Color scales ─────────────────────────────────────────────────────────────
 // Discrete steps — easier to read on a map than continuous gradients.
@@ -101,6 +112,7 @@ interface OilMapLayerProps {
 }
 
 export default function OilMapLayer({ metric }: OilMapLayerProps) {
+  const isReservesUnavailable = metric === 'reserves' && reservesUnavailable
   const steps = metric === 'reserves' ? RESERVES_STEPS : PRODUCTION_STEPS
   const title = metric === 'reserves' ? 'Oil Reserves' : 'Oil Production'
 
@@ -114,7 +126,7 @@ export default function OilMapLayer({ metric }: OilMapLayerProps) {
         borderColor: '#1E2D4A',
         padding: '10px 12px',
         backdropFilter: 'blur(4px)',
-        minWidth: 130,
+        minWidth: 140,
       }}
     >
       <p
@@ -124,24 +136,32 @@ export default function OilMapLayer({ metric }: OilMapLayerProps) {
         {title}
       </p>
 
-      <div className="flex flex-col gap-1.5">
-        {steps.map(step => (
-          <div key={step.label} className="flex items-center gap-2">
+      {isReservesUnavailable ? (
+        // Reserves data not yet sourced — show a clear notice instead of a useless all-null legend
+        <p className="text-[10px] leading-snug" style={{ color: '#334155' }}>
+          Not yet available.<br />
+          Pending OWID / EI data.
+        </p>
+      ) : (
+        <div className="flex flex-col gap-1.5">
+          {steps.map(step => (
+            <div key={step.label} className="flex items-center gap-2">
+              <div
+                className="flex-shrink-0 rounded-sm"
+                style={{ width: 10, height: 10, background: step.color }}
+              />
+              <span style={{ color: '#94A3B8' }}>{step.label}</span>
+            </div>
+          ))}
+          <div className="flex items-center gap-2 mt-0.5">
             <div
               className="flex-shrink-0 rounded-sm"
-              style={{ width: 10, height: 10, background: step.color }}
+              style={{ width: 10, height: 10, background: NULL_COLOR, border: '1px solid #1E2D4A' }}
             />
-            <span style={{ color: '#94A3B8' }}>{step.label}</span>
+            <span style={{ color: '#475569' }}>No data</span>
           </div>
-        ))}
-        <div className="flex items-center gap-2 mt-0.5">
-          <div
-            className="flex-shrink-0 rounded-sm"
-            style={{ width: 10, height: 10, background: NULL_COLOR, border: '1px solid #1E2D4A' }}
-          />
-          <span style={{ color: '#475569' }}>No data</span>
         </div>
-      </div>
+      )}
 
       <p className="mt-2 text-[9px]" style={{ color: '#1E3A5F' }}>
         EIA · 2023 est. · Sample

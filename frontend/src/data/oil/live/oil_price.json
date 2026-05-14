@@ -1,0 +1,3602 @@
+[
+  {
+    "date": "2010-01",
+    "crude_type": "Brent",
+    "price_usd": 76.17,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2010-01",
+    "crude_type": "WTI",
+    "price_usd": 78.33,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2010-02",
+    "crude_type": "Brent",
+    "price_usd": 73.75,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2010-02",
+    "crude_type": "WTI",
+    "price_usd": 76.39,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2010-03",
+    "crude_type": "Brent",
+    "price_usd": 78.83,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2010-03",
+    "crude_type": "WTI",
+    "price_usd": 81.2,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2010-04",
+    "crude_type": "Brent",
+    "price_usd": 84.82,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2010-04",
+    "crude_type": "WTI",
+    "price_usd": 84.29,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2010-05",
+    "crude_type": "Brent",
+    "price_usd": 75.95,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2010-05",
+    "crude_type": "WTI",
+    "price_usd": 73.74,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2010-06",
+    "crude_type": "Brent",
+    "price_usd": 74.76,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2010-06",
+    "crude_type": "WTI",
+    "price_usd": 75.34,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2010-07",
+    "crude_type": "Brent",
+    "price_usd": 75.58,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2010-07",
+    "crude_type": "WTI",
+    "price_usd": 76.32,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2010-08",
+    "crude_type": "Brent",
+    "price_usd": 77.04,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2010-08",
+    "crude_type": "WTI",
+    "price_usd": 76.6,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2010-09",
+    "crude_type": "Brent",
+    "price_usd": 77.84,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2010-09",
+    "crude_type": "WTI",
+    "price_usd": 75.24,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2010-10",
+    "crude_type": "Brent",
+    "price_usd": 82.67,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2010-10",
+    "crude_type": "WTI",
+    "price_usd": 81.89,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2010-11",
+    "crude_type": "Brent",
+    "price_usd": 85.28,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2010-11",
+    "crude_type": "WTI",
+    "price_usd": 84.25,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2010-12",
+    "crude_type": "Brent",
+    "price_usd": 91.45,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2010-12",
+    "crude_type": "WTI",
+    "price_usd": 89.15,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2011-01",
+    "crude_type": "Brent",
+    "price_usd": 96.52,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2011-01",
+    "crude_type": "WTI",
+    "price_usd": 89.17,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2011-02",
+    "crude_type": "Brent",
+    "price_usd": 103.72,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2011-02",
+    "crude_type": "WTI",
+    "price_usd": 88.58,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2011-03",
+    "crude_type": "Brent",
+    "price_usd": 114.64,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2011-03",
+    "crude_type": "WTI",
+    "price_usd": 102.86,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2011-04",
+    "crude_type": "Brent",
+    "price_usd": 123.26,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2011-04",
+    "crude_type": "WTI",
+    "price_usd": 109.53,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2011-05",
+    "crude_type": "Brent",
+    "price_usd": 114.99,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2011-05",
+    "crude_type": "WTI",
+    "price_usd": 100.9,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2011-06",
+    "crude_type": "Brent",
+    "price_usd": 113.83,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2011-06",
+    "crude_type": "WTI",
+    "price_usd": 96.26,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2011-07",
+    "crude_type": "Brent",
+    "price_usd": 116.97,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2011-07",
+    "crude_type": "WTI",
+    "price_usd": 97.3,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2011-08",
+    "crude_type": "Brent",
+    "price_usd": 110.22,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2011-08",
+    "crude_type": "WTI",
+    "price_usd": 86.33,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2011-09",
+    "crude_type": "Brent",
+    "price_usd": 112.83,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2011-09",
+    "crude_type": "WTI",
+    "price_usd": 85.52,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2011-10",
+    "crude_type": "Brent",
+    "price_usd": 109.55,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2011-10",
+    "crude_type": "WTI",
+    "price_usd": 86.32,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2011-11",
+    "crude_type": "Brent",
+    "price_usd": 110.77,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2011-11",
+    "crude_type": "WTI",
+    "price_usd": 97.16,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2011-12",
+    "crude_type": "Brent",
+    "price_usd": 107.87,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2011-12",
+    "crude_type": "WTI",
+    "price_usd": 98.56,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2012-01",
+    "crude_type": "Brent",
+    "price_usd": 110.69,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2012-01",
+    "crude_type": "WTI",
+    "price_usd": 100.27,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2012-02",
+    "crude_type": "Brent",
+    "price_usd": 119.33,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2012-02",
+    "crude_type": "WTI",
+    "price_usd": 102.2,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2012-03",
+    "crude_type": "Brent",
+    "price_usd": 125.45,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2012-03",
+    "crude_type": "WTI",
+    "price_usd": 106.16,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2012-04",
+    "crude_type": "Brent",
+    "price_usd": 119.75,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2012-04",
+    "crude_type": "WTI",
+    "price_usd": 103.32,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2012-05",
+    "crude_type": "Brent",
+    "price_usd": 110.34,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2012-05",
+    "crude_type": "WTI",
+    "price_usd": 94.66,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2012-06",
+    "crude_type": "Brent",
+    "price_usd": 95.16,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2012-06",
+    "crude_type": "WTI",
+    "price_usd": 82.3,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2012-07",
+    "crude_type": "Brent",
+    "price_usd": 102.62,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2012-07",
+    "crude_type": "WTI",
+    "price_usd": 87.9,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2012-08",
+    "crude_type": "Brent",
+    "price_usd": 113.36,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2012-08",
+    "crude_type": "WTI",
+    "price_usd": 94.13,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2012-09",
+    "crude_type": "Brent",
+    "price_usd": 112.86,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2012-09",
+    "crude_type": "WTI",
+    "price_usd": 94.51,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2012-10",
+    "crude_type": "Brent",
+    "price_usd": 111.71,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2012-10",
+    "crude_type": "WTI",
+    "price_usd": 89.49,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2012-11",
+    "crude_type": "Brent",
+    "price_usd": 109.06,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2012-11",
+    "crude_type": "WTI",
+    "price_usd": 86.53,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2012-12",
+    "crude_type": "Brent",
+    "price_usd": 109.49,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2012-12",
+    "crude_type": "WTI",
+    "price_usd": 87.86,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2013-01",
+    "crude_type": "Brent",
+    "price_usd": 112.96,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2013-01",
+    "crude_type": "WTI",
+    "price_usd": 94.76,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2013-02",
+    "crude_type": "Brent",
+    "price_usd": 116.05,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2013-02",
+    "crude_type": "WTI",
+    "price_usd": 95.31,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2013-03",
+    "crude_type": "Brent",
+    "price_usd": 108.47,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2013-03",
+    "crude_type": "WTI",
+    "price_usd": 92.94,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2013-04",
+    "crude_type": "Brent",
+    "price_usd": 102.25,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2013-04",
+    "crude_type": "WTI",
+    "price_usd": 92.02,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2013-05",
+    "crude_type": "Brent",
+    "price_usd": 102.56,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2013-05",
+    "crude_type": "WTI",
+    "price_usd": 94.51,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2013-06",
+    "crude_type": "Brent",
+    "price_usd": 102.92,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2013-06",
+    "crude_type": "WTI",
+    "price_usd": 95.77,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2013-07",
+    "crude_type": "Brent",
+    "price_usd": 107.93,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2013-07",
+    "crude_type": "WTI",
+    "price_usd": 104.67,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2013-08",
+    "crude_type": "Brent",
+    "price_usd": 111.28,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2013-08",
+    "crude_type": "WTI",
+    "price_usd": 106.57,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2013-09",
+    "crude_type": "Brent",
+    "price_usd": 111.6,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2013-09",
+    "crude_type": "WTI",
+    "price_usd": 106.29,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2013-10",
+    "crude_type": "Brent",
+    "price_usd": 109.08,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2013-10",
+    "crude_type": "WTI",
+    "price_usd": 100.54,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2013-11",
+    "crude_type": "Brent",
+    "price_usd": 107.79,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2013-11",
+    "crude_type": "WTI",
+    "price_usd": 93.86,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2013-12",
+    "crude_type": "Brent",
+    "price_usd": 110.76,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2013-12",
+    "crude_type": "WTI",
+    "price_usd": 97.63,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2014-01",
+    "crude_type": "Brent",
+    "price_usd": 108.12,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2014-01",
+    "crude_type": "WTI",
+    "price_usd": 94.62,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2014-02",
+    "crude_type": "Brent",
+    "price_usd": 108.9,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2014-02",
+    "crude_type": "WTI",
+    "price_usd": 100.82,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2014-03",
+    "crude_type": "Brent",
+    "price_usd": 107.48,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2014-03",
+    "crude_type": "WTI",
+    "price_usd": 100.8,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2014-04",
+    "crude_type": "Brent",
+    "price_usd": 107.76,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2014-04",
+    "crude_type": "WTI",
+    "price_usd": 102.07,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2014-05",
+    "crude_type": "Brent",
+    "price_usd": 109.54,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2014-05",
+    "crude_type": "WTI",
+    "price_usd": 102.18,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2014-06",
+    "crude_type": "Brent",
+    "price_usd": 111.8,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2014-06",
+    "crude_type": "WTI",
+    "price_usd": 105.79,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2014-07",
+    "crude_type": "Brent",
+    "price_usd": 106.77,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2014-07",
+    "crude_type": "WTI",
+    "price_usd": 103.59,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2014-08",
+    "crude_type": "Brent",
+    "price_usd": 101.61,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2014-08",
+    "crude_type": "WTI",
+    "price_usd": 96.54,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2014-09",
+    "crude_type": "Brent",
+    "price_usd": 97.09,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2014-09",
+    "crude_type": "WTI",
+    "price_usd": 93.21,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2014-10",
+    "crude_type": "Brent",
+    "price_usd": 87.43,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2014-10",
+    "crude_type": "WTI",
+    "price_usd": 84.4,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2014-11",
+    "crude_type": "Brent",
+    "price_usd": 79.44,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2014-11",
+    "crude_type": "WTI",
+    "price_usd": 75.79,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2014-12",
+    "crude_type": "Brent",
+    "price_usd": 62.34,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2014-12",
+    "crude_type": "WTI",
+    "price_usd": 59.29,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2015-01",
+    "crude_type": "Brent",
+    "price_usd": 47.76,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2015-01",
+    "crude_type": "WTI",
+    "price_usd": 47.22,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2015-02",
+    "crude_type": "Brent",
+    "price_usd": 58.1,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2015-02",
+    "crude_type": "WTI",
+    "price_usd": 50.58,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2015-03",
+    "crude_type": "Brent",
+    "price_usd": 55.89,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2015-03",
+    "crude_type": "WTI",
+    "price_usd": 47.82,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2015-04",
+    "crude_type": "Brent",
+    "price_usd": 59.52,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2015-04",
+    "crude_type": "WTI",
+    "price_usd": 54.45,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2015-05",
+    "crude_type": "Brent",
+    "price_usd": 64.08,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2015-05",
+    "crude_type": "WTI",
+    "price_usd": 59.27,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2015-06",
+    "crude_type": "Brent",
+    "price_usd": 61.48,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2015-06",
+    "crude_type": "WTI",
+    "price_usd": 59.82,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2015-07",
+    "crude_type": "Brent",
+    "price_usd": 56.56,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2015-07",
+    "crude_type": "WTI",
+    "price_usd": 50.9,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2015-08",
+    "crude_type": "Brent",
+    "price_usd": 46.52,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2015-08",
+    "crude_type": "WTI",
+    "price_usd": 42.87,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2015-09",
+    "crude_type": "Brent",
+    "price_usd": 47.62,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2015-09",
+    "crude_type": "WTI",
+    "price_usd": 45.48,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2015-10",
+    "crude_type": "Brent",
+    "price_usd": 48.43,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2015-10",
+    "crude_type": "WTI",
+    "price_usd": 46.22,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2015-11",
+    "crude_type": "Brent",
+    "price_usd": 44.27,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2015-11",
+    "crude_type": "WTI",
+    "price_usd": 42.44,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2015-12",
+    "crude_type": "Brent",
+    "price_usd": 38.01,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2015-12",
+    "crude_type": "WTI",
+    "price_usd": 37.19,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2016-01",
+    "crude_type": "Brent",
+    "price_usd": 30.7,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2016-01",
+    "crude_type": "WTI",
+    "price_usd": 31.68,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2016-02",
+    "crude_type": "Brent",
+    "price_usd": 32.18,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2016-02",
+    "crude_type": "WTI",
+    "price_usd": 30.32,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2016-03",
+    "crude_type": "Brent",
+    "price_usd": 38.21,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2016-03",
+    "crude_type": "WTI",
+    "price_usd": 37.55,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2016-04",
+    "crude_type": "Brent",
+    "price_usd": 41.58,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2016-04",
+    "crude_type": "WTI",
+    "price_usd": 40.75,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2016-05",
+    "crude_type": "Brent",
+    "price_usd": 46.74,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2016-05",
+    "crude_type": "WTI",
+    "price_usd": 46.71,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2016-06",
+    "crude_type": "Brent",
+    "price_usd": 48.25,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2016-06",
+    "crude_type": "WTI",
+    "price_usd": 48.76,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2016-07",
+    "crude_type": "Brent",
+    "price_usd": 44.95,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2016-07",
+    "crude_type": "WTI",
+    "price_usd": 44.65,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2016-08",
+    "crude_type": "Brent",
+    "price_usd": 45.84,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2016-08",
+    "crude_type": "WTI",
+    "price_usd": 44.72,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2016-09",
+    "crude_type": "Brent",
+    "price_usd": 46.57,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2016-09",
+    "crude_type": "WTI",
+    "price_usd": 45.18,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2016-10",
+    "crude_type": "Brent",
+    "price_usd": 49.52,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2016-10",
+    "crude_type": "WTI",
+    "price_usd": 49.78,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2016-11",
+    "crude_type": "Brent",
+    "price_usd": 44.73,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2016-11",
+    "crude_type": "WTI",
+    "price_usd": 45.66,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2016-12",
+    "crude_type": "Brent",
+    "price_usd": 53.31,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2016-12",
+    "crude_type": "WTI",
+    "price_usd": 51.97,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2017-01",
+    "crude_type": "Brent",
+    "price_usd": 54.58,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2017-01",
+    "crude_type": "WTI",
+    "price_usd": 52.5,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2017-02",
+    "crude_type": "Brent",
+    "price_usd": 54.87,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2017-02",
+    "crude_type": "WTI",
+    "price_usd": 53.47,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2017-03",
+    "crude_type": "Brent",
+    "price_usd": 51.59,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2017-03",
+    "crude_type": "WTI",
+    "price_usd": 49.33,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2017-04",
+    "crude_type": "Brent",
+    "price_usd": 52.31,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2017-04",
+    "crude_type": "WTI",
+    "price_usd": 51.06,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2017-05",
+    "crude_type": "Brent",
+    "price_usd": 50.33,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2017-05",
+    "crude_type": "WTI",
+    "price_usd": 48.48,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2017-06",
+    "crude_type": "Brent",
+    "price_usd": 46.37,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2017-06",
+    "crude_type": "WTI",
+    "price_usd": 45.18,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2017-07",
+    "crude_type": "Brent",
+    "price_usd": 48.48,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2017-07",
+    "crude_type": "WTI",
+    "price_usd": 46.63,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2017-08",
+    "crude_type": "Brent",
+    "price_usd": 51.7,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2017-08",
+    "crude_type": "WTI",
+    "price_usd": 48.04,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2017-09",
+    "crude_type": "Brent",
+    "price_usd": 56.15,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2017-09",
+    "crude_type": "WTI",
+    "price_usd": 49.82,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2017-10",
+    "crude_type": "Brent",
+    "price_usd": 57.51,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2017-10",
+    "crude_type": "WTI",
+    "price_usd": 51.58,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2017-11",
+    "crude_type": "Brent",
+    "price_usd": 62.71,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2017-11",
+    "crude_type": "WTI",
+    "price_usd": 56.64,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2017-12",
+    "crude_type": "Brent",
+    "price_usd": 64.37,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2017-12",
+    "crude_type": "WTI",
+    "price_usd": 57.88,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2018-01",
+    "crude_type": "Brent",
+    "price_usd": 69.08,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2018-01",
+    "crude_type": "WTI",
+    "price_usd": 63.7,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2018-02",
+    "crude_type": "Brent",
+    "price_usd": 65.32,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2018-02",
+    "crude_type": "WTI",
+    "price_usd": 62.23,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2018-03",
+    "crude_type": "Brent",
+    "price_usd": 66.02,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2018-03",
+    "crude_type": "WTI",
+    "price_usd": 62.73,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2018-04",
+    "crude_type": "Brent",
+    "price_usd": 72.11,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2018-04",
+    "crude_type": "WTI",
+    "price_usd": 66.25,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2018-05",
+    "crude_type": "Brent",
+    "price_usd": 76.98,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2018-05",
+    "crude_type": "WTI",
+    "price_usd": 69.98,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2018-06",
+    "crude_type": "Brent",
+    "price_usd": 74.41,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2018-06",
+    "crude_type": "WTI",
+    "price_usd": 67.87,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2018-07",
+    "crude_type": "Brent",
+    "price_usd": 74.25,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2018-07",
+    "crude_type": "WTI",
+    "price_usd": 70.98,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2018-08",
+    "crude_type": "Brent",
+    "price_usd": 72.53,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2018-08",
+    "crude_type": "WTI",
+    "price_usd": 68.06,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2018-09",
+    "crude_type": "Brent",
+    "price_usd": 78.89,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2018-09",
+    "crude_type": "WTI",
+    "price_usd": 70.23,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2018-10",
+    "crude_type": "Brent",
+    "price_usd": 81.03,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2018-10",
+    "crude_type": "WTI",
+    "price_usd": 70.75,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2018-11",
+    "crude_type": "Brent",
+    "price_usd": 64.75,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2018-11",
+    "crude_type": "WTI",
+    "price_usd": 56.96,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2018-12",
+    "crude_type": "Brent",
+    "price_usd": 57.36,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2018-12",
+    "crude_type": "WTI",
+    "price_usd": 49.52,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2019-01",
+    "crude_type": "Brent",
+    "price_usd": 59.41,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2019-01",
+    "crude_type": "WTI",
+    "price_usd": 51.38,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2019-02",
+    "crude_type": "Brent",
+    "price_usd": 63.96,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2019-02",
+    "crude_type": "WTI",
+    "price_usd": 54.95,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2019-03",
+    "crude_type": "Brent",
+    "price_usd": 66.14,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2019-03",
+    "crude_type": "WTI",
+    "price_usd": 58.15,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2019-04",
+    "crude_type": "Brent",
+    "price_usd": 71.23,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2019-04",
+    "crude_type": "WTI",
+    "price_usd": 63.86,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2019-05",
+    "crude_type": "Brent",
+    "price_usd": 71.32,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2019-05",
+    "crude_type": "WTI",
+    "price_usd": 60.83,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2019-06",
+    "crude_type": "Brent",
+    "price_usd": 64.22,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2019-06",
+    "crude_type": "WTI",
+    "price_usd": 54.66,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2019-07",
+    "crude_type": "Brent",
+    "price_usd": 63.92,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2019-07",
+    "crude_type": "WTI",
+    "price_usd": 57.35,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2019-08",
+    "crude_type": "Brent",
+    "price_usd": 59.04,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2019-08",
+    "crude_type": "WTI",
+    "price_usd": 54.81,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2019-09",
+    "crude_type": "Brent",
+    "price_usd": 62.83,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2019-09",
+    "crude_type": "WTI",
+    "price_usd": 56.95,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2019-10",
+    "crude_type": "Brent",
+    "price_usd": 59.71,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2019-10",
+    "crude_type": "WTI",
+    "price_usd": 53.96,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2019-11",
+    "crude_type": "Brent",
+    "price_usd": 63.21,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2019-11",
+    "crude_type": "WTI",
+    "price_usd": 57.03,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2019-12",
+    "crude_type": "Brent",
+    "price_usd": 67.31,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2019-12",
+    "crude_type": "WTI",
+    "price_usd": 59.88,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2020-01",
+    "crude_type": "Brent",
+    "price_usd": 63.65,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2020-01",
+    "crude_type": "WTI",
+    "price_usd": 57.52,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2020-02",
+    "crude_type": "Brent",
+    "price_usd": 55.66,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2020-02",
+    "crude_type": "WTI",
+    "price_usd": 50.54,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2020-03",
+    "crude_type": "Brent",
+    "price_usd": 32.01,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2020-03",
+    "crude_type": "WTI",
+    "price_usd": 29.21,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2020-04",
+    "crude_type": "Brent",
+    "price_usd": 18.38,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2020-04",
+    "crude_type": "WTI",
+    "price_usd": 16.55,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2020-05",
+    "crude_type": "Brent",
+    "price_usd": 29.38,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2020-05",
+    "crude_type": "WTI",
+    "price_usd": 28.56,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2020-06",
+    "crude_type": "Brent",
+    "price_usd": 40.27,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2020-06",
+    "crude_type": "WTI",
+    "price_usd": 38.31,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2020-07",
+    "crude_type": "Brent",
+    "price_usd": 43.24,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2020-07",
+    "crude_type": "WTI",
+    "price_usd": 40.71,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2020-08",
+    "crude_type": "Brent",
+    "price_usd": 44.74,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2020-08",
+    "crude_type": "WTI",
+    "price_usd": 42.34,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2020-09",
+    "crude_type": "Brent",
+    "price_usd": 40.91,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2020-09",
+    "crude_type": "WTI",
+    "price_usd": 39.63,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2020-10",
+    "crude_type": "Brent",
+    "price_usd": 40.19,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2020-10",
+    "crude_type": "WTI",
+    "price_usd": 39.4,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2020-11",
+    "crude_type": "Brent",
+    "price_usd": 42.69,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2020-11",
+    "crude_type": "WTI",
+    "price_usd": 40.94,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2020-12",
+    "crude_type": "Brent",
+    "price_usd": 49.99,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2020-12",
+    "crude_type": "WTI",
+    "price_usd": 47.02,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2021-01",
+    "crude_type": "Brent",
+    "price_usd": 54.77,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2021-01",
+    "crude_type": "WTI",
+    "price_usd": 52.0,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2021-02",
+    "crude_type": "Brent",
+    "price_usd": 62.28,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2021-02",
+    "crude_type": "WTI",
+    "price_usd": 59.04,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2021-03",
+    "crude_type": "Brent",
+    "price_usd": 65.41,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2021-03",
+    "crude_type": "WTI",
+    "price_usd": 62.33,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2021-04",
+    "crude_type": "Brent",
+    "price_usd": 64.81,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2021-04",
+    "crude_type": "WTI",
+    "price_usd": 61.72,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2021-05",
+    "crude_type": "Brent",
+    "price_usd": 68.53,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2021-05",
+    "crude_type": "WTI",
+    "price_usd": 65.17,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2021-06",
+    "crude_type": "Brent",
+    "price_usd": 73.16,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2021-06",
+    "crude_type": "WTI",
+    "price_usd": 71.38,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2021-07",
+    "crude_type": "Brent",
+    "price_usd": 75.17,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2021-07",
+    "crude_type": "WTI",
+    "price_usd": 72.49,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2021-08",
+    "crude_type": "Brent",
+    "price_usd": 70.61,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2021-08",
+    "crude_type": "WTI",
+    "price_usd": 67.7,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2021-09",
+    "crude_type": "Brent",
+    "price_usd": 74.49,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2021-09",
+    "crude_type": "WTI",
+    "price_usd": 71.65,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2021-10",
+    "crude_type": "Brent",
+    "price_usd": 83.54,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2021-10",
+    "crude_type": "WTI",
+    "price_usd": 81.48,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2021-11",
+    "crude_type": "Brent",
+    "price_usd": 81.05,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2021-11",
+    "crude_type": "WTI",
+    "price_usd": 79.15,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2021-12",
+    "crude_type": "Brent",
+    "price_usd": 74.17,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2021-12",
+    "crude_type": "WTI",
+    "price_usd": 71.71,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2022-01",
+    "crude_type": "Brent",
+    "price_usd": 86.51,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2022-01",
+    "crude_type": "WTI",
+    "price_usd": 83.22,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2022-02",
+    "crude_type": "Brent",
+    "price_usd": 97.13,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2022-02",
+    "crude_type": "WTI",
+    "price_usd": 91.64,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2022-03",
+    "crude_type": "Brent",
+    "price_usd": 117.25,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2022-03",
+    "crude_type": "WTI",
+    "price_usd": 108.5,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2022-04",
+    "crude_type": "Brent",
+    "price_usd": 104.58,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2022-04",
+    "crude_type": "WTI",
+    "price_usd": 101.78,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2022-05",
+    "crude_type": "Brent",
+    "price_usd": 113.34,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2022-05",
+    "crude_type": "WTI",
+    "price_usd": 109.55,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2022-06",
+    "crude_type": "Brent",
+    "price_usd": 122.71,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2022-06",
+    "crude_type": "WTI",
+    "price_usd": 114.84,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2022-07",
+    "crude_type": "Brent",
+    "price_usd": 111.93,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2022-07",
+    "crude_type": "WTI",
+    "price_usd": 101.62,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2022-08",
+    "crude_type": "Brent",
+    "price_usd": 100.45,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2022-08",
+    "crude_type": "WTI",
+    "price_usd": 93.67,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2022-09",
+    "crude_type": "Brent",
+    "price_usd": 89.76,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2022-09",
+    "crude_type": "WTI",
+    "price_usd": 84.26,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2022-10",
+    "crude_type": "Brent",
+    "price_usd": 93.33,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2022-10",
+    "crude_type": "WTI",
+    "price_usd": 87.55,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2022-11",
+    "crude_type": "Brent",
+    "price_usd": 91.42,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2022-11",
+    "crude_type": "WTI",
+    "price_usd": 84.37,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2022-12",
+    "crude_type": "Brent",
+    "price_usd": 80.92,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2022-12",
+    "crude_type": "WTI",
+    "price_usd": 76.44,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2023-01",
+    "crude_type": "Brent",
+    "price_usd": 82.5,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2023-01",
+    "crude_type": "WTI",
+    "price_usd": 78.12,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2023-02",
+    "crude_type": "Brent",
+    "price_usd": 82.59,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2023-02",
+    "crude_type": "WTI",
+    "price_usd": 76.83,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2023-03",
+    "crude_type": "Brent",
+    "price_usd": 78.43,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2023-03",
+    "crude_type": "WTI",
+    "price_usd": 73.28,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2023-04",
+    "crude_type": "Brent",
+    "price_usd": 84.64,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2023-04",
+    "crude_type": "WTI",
+    "price_usd": 79.45,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2023-05",
+    "crude_type": "Brent",
+    "price_usd": 75.47,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2023-05",
+    "crude_type": "WTI",
+    "price_usd": 71.58,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2023-06",
+    "crude_type": "Brent",
+    "price_usd": 74.84,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2023-06",
+    "crude_type": "WTI",
+    "price_usd": 70.25,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2023-07",
+    "crude_type": "Brent",
+    "price_usd": 80.11,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2023-07",
+    "crude_type": "WTI",
+    "price_usd": 76.07,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2023-08",
+    "crude_type": "Brent",
+    "price_usd": 86.15,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2023-08",
+    "crude_type": "WTI",
+    "price_usd": 81.39,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2023-09",
+    "crude_type": "Brent",
+    "price_usd": 93.72,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2023-09",
+    "crude_type": "WTI",
+    "price_usd": 89.43,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2023-10",
+    "crude_type": "Brent",
+    "price_usd": 90.6,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2023-10",
+    "crude_type": "WTI",
+    "price_usd": 85.64,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2023-11",
+    "crude_type": "Brent",
+    "price_usd": 82.94,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2023-11",
+    "crude_type": "WTI",
+    "price_usd": 77.69,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2023-12",
+    "crude_type": "Brent",
+    "price_usd": 77.63,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2023-12",
+    "crude_type": "WTI",
+    "price_usd": 71.9,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2024-01",
+    "crude_type": "Brent",
+    "price_usd": 80.12,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2024-01",
+    "crude_type": "WTI",
+    "price_usd": 74.15,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2024-02",
+    "crude_type": "Brent",
+    "price_usd": 83.48,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2024-02",
+    "crude_type": "WTI",
+    "price_usd": 77.25,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2024-03",
+    "crude_type": "Brent",
+    "price_usd": 85.41,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2024-03",
+    "crude_type": "WTI",
+    "price_usd": 81.28,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2024-04",
+    "crude_type": "Brent",
+    "price_usd": 89.94,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2024-04",
+    "crude_type": "WTI",
+    "price_usd": 85.35,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2024-05",
+    "crude_type": "Brent",
+    "price_usd": 81.75,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2024-05",
+    "crude_type": "WTI",
+    "price_usd": 80.02,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2024-06",
+    "crude_type": "Brent",
+    "price_usd": 82.25,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2024-06",
+    "crude_type": "WTI",
+    "price_usd": 79.77,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2024-07",
+    "crude_type": "Brent",
+    "price_usd": 85.15,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2024-07",
+    "crude_type": "WTI",
+    "price_usd": 81.8,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2024-08",
+    "crude_type": "Brent",
+    "price_usd": 80.36,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2024-08",
+    "crude_type": "WTI",
+    "price_usd": 76.68,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2024-09",
+    "crude_type": "Brent",
+    "price_usd": 74.02,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2024-09",
+    "crude_type": "WTI",
+    "price_usd": 70.24,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2024-10",
+    "crude_type": "Brent",
+    "price_usd": 75.63,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2024-10",
+    "crude_type": "WTI",
+    "price_usd": 71.99,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2024-11",
+    "crude_type": "Brent",
+    "price_usd": 74.35,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2024-11",
+    "crude_type": "WTI",
+    "price_usd": 69.95,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2024-12",
+    "crude_type": "Brent",
+    "price_usd": 73.86,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RBRTE.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  },
+  {
+    "date": "2024-12",
+    "crude_type": "WTI",
+    "price_usd": 70.12,
+    "unit": "dollars per barrel",
+    "frequency": "monthly",
+    "source": "EIA",
+    "source_id": "PET.RWTC.M",
+    "source_url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+  }
+]

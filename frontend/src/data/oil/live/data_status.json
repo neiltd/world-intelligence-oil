@@ -1,0 +1,46 @@
+{
+  "generated_at": "2026-05-12T17:10:13Z",
+  "datasets": {
+    "price": {
+      "source": "EIA Open Data API v2",
+      "series": [
+        "Brent",
+        "WTI"
+      ],
+      "record_count": 360,
+      "date_range": [
+        "2010-01",
+        "2024-12"
+      ],
+      "frequency": "monthly",
+      "error_count": 0
+    },
+    "supply": {
+      "source": "EIA Open Data API v2",
+      "metric": "Total petroleum and other liquids (kb/d)",
+      "record_count": 643,
+      "country_count": 43,
+      "year_range": [
+        2010,
+        2024
+      ],
+      "reserves_available": true,
+      "error_count": 0,
+      "reserves_source": "EI Statistical Review 2024"
+    },
+    "reserves": {
+      "source": "EI Statistical Review 2024 (curated seed)",
+      "methodology": "EI/BP self-reported proved reserves",
+      "seed_file": "reserves_ei_2023.csv",
+      "country_count": 43,
+      "year_range": [
+        2018,
+        2024
+      ],
+      "exact_matches": 43,
+      "nearest_matches": 258,
+      "year_tolerance": 5,
+      "error_count": 0
+    }
+  }
+}

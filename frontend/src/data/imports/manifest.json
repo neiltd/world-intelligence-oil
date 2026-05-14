@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "generated_by": "world-intelligence-hub",
+  "generated_at": null,
+  "hub_version": null,
+  "datasets": {
+    "energy-indicators": {
+      "file": "energy-indicators.json",
+      "status": "pending",
+      "description": "Country oil reserves, production, exports, imports by year",
+      "schema": "OilCountrySupplyRecord[]",
+      "expected_fields": ["iso3", "year", "reserves", "production", "exports", "imports", "opec_member"],
+      "units": { "reserves": "Bbbl", "production": "kb/d", "exports": "kb/d", "imports": "kb/d" },
+      "source_precedence": ["EIA", "EnergyInstitute", "WorldBank"]
+    },
+    "price-series": {
+      "file": "price-series.json",
+      "status": "pending",
+      "description": "Crude oil spot prices by date and crude type",
+      "schema": "OilPriceRecord[]",
+      "expected_fields": ["date", "crude_type", "price_usd", "unit", "frequency", "source"],
+      "units": { "price_usd": "USD/bbl" },
+      "source_precedence": ["EIA", "WorldBank"]
+    },
+    "events": {
+      "file": "events.json",
+      "status": "pending",
+      "description": "Oil-related geopolitical events (OPEC decisions, conflicts, sanctions, infrastructure)",
+      "schema": "OilEventRecord[]",
+      "expected_fields": ["event_id", "date", "iso3", "event_type", "title", "summary", "source", "confidence_level"],
+      "taxonomy": {
+        "event_types": ["opec", "conflict", "sanction", "infrastructure", "trade", "economic", "weather", "accident"],
+        "confidence_levels": ["high", "medium", "low"],
+        "deduplication_key": ["date", "iso3", "event_type"]
+      },
+      "source_precedence": ["EIA", "OPEC", "OFAC", "ACLED", "IMFPortWatch", "manual"]
+    },
+    "macro-indicators": {
+      "file": "macro-indicators.json",
+      "status": "planned",
+      "description": "Country-level macroeconomic indicators (GDP, inflation, trade balance)",
+      "schema": "MacroIndicatorRecord[]",
+      "expected_fields": ["iso3", "year", "gdp_usd", "inflation_pct", "current_account_pct_gdp"],
+      "source_precedence": ["WorldBank", "IMF"]
+    }
+  },
+  "null_convention": "null means unknown or unavailable — never use 0 for missing",
+  "geography_standard": "ISO3 (alpha-3) only",
+  "date_standard": "ISO 8601 — YYYY-MM for monthly, YYYY-MM-DD for daily, integer for annual",
+  "contact": "See DATA_CONTRACT.md for field-level documentation"
+}

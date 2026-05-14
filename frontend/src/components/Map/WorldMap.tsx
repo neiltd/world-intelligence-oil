@@ -53,7 +53,7 @@ type TooltipState = {
 
 export default function WorldMap() {
   const {
-    countryData, compareData, selectCountry,
+    selectedCountryId, countryData, compareData, selectCountry,
     oilMetric, isLayerVisible,
   } = useMapStore()
 
@@ -113,9 +113,12 @@ export default function WorldMap() {
       features: countriesGeo.features.map((f: any) => {
         const iso3: string | null = f.properties?.iso3
 
-        // Selected / compare overrides always win
-        if (iso3 === countryData?.id)  return { ...f, properties: { ...f.properties, color: '#2563EB' } }
-        if (iso3 === compareData?.id)  return { ...f, properties: { ...f.properties, color: '#8B5CF6' } }
+        // Selected / compare overrides always win.
+        // Use selectedCountryId (not countryData?.id) so highlight persists even
+        // when the country JSON failed to load (e.g. clicking "View on map" for a
+        // country not yet in data/countries/).
+        if (iso3 === selectedCountryId) return { ...f, properties: { ...f.properties, color: '#2563EB' } }
+        if (iso3 === compareData?.id)   return { ...f, properties: { ...f.properties, color: '#8B5CF6' } }
 
         // Oil choropleth
         if (oilLayerActive && iso3) {
@@ -127,7 +130,7 @@ export default function WorldMap() {
         return { ...f, properties: { ...f.properties, color } }
       }),
     }
-  }, [countriesGeo, countryData, compareData, oilLayerActive, oilMetric])
+  }, [countriesGeo, selectedCountryId, compareData, oilLayerActive, oilMetric])
 
   const handleMouseMove = useCallback((e: MapMouseEvent) => {
     const f = e.features?.[0]

@@ -9,8 +9,8 @@ export type OilLayerMetric = 'reserves' | 'production'
 // Source precedence (Gemini standard): EIA > EnergyInstitute > WorldBank > OPEC > manual
 export type DataSource = 'EIA' | 'EnergyInstitute' | 'WorldBank' | 'OPEC' | 'manual'
 
-// Gemini-confirmed full taxonomy (Steps 2 + 3 research)
-export type EventType = 'conflict' | 'sanction' | 'opec' | 'infrastructure' | 'trade' | 'weather' | 'accident'
+// Gemini-confirmed full taxonomy (event source research)
+export type EventType = 'conflict' | 'sanction' | 'opec' | 'infrastructure' | 'trade' | 'economic' | 'weather' | 'accident'
 export type ConfidenceLevel = 'high' | 'medium' | 'low'
 
 // ─── Unit types (Gemini-aligned abbreviations) ────────────────────────────────

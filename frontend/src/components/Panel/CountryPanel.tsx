@@ -4,12 +4,18 @@ import { useMapStore } from '../../store/useMapStore'
 import type { Country } from '../../types/country'
 import type { OilCountrySupplyRecord } from '../../types/oil'
 import countryIndex from '../../data/country-index.json'
-import supplyRaw from '../../data/oil/oil_country_supply_sample.json'
+import supplyRaw from '../../data/oil/live/oil_country_supply.json'
 
-// ─── Oil supply lookup (ISO3 → record) ───────────────────────────────────────
+// ─── Oil supply lookup (ISO3 → most recent year's record) ────────────────────
+// Live data has multiple years per country. Explicit year comparison ensures
+// the most recent record is used regardless of JSON sort order.
 
 const supply = supplyRaw as OilCountrySupplyRecord[]
-const supplyByISO3 = new Map(supply.map(r => [r.iso3, r]))
+const supplyByISO3 = new Map<string, OilCountrySupplyRecord>()
+for (const r of supply) {
+  const existing = supplyByISO3.get(r.iso3)
+  if (!existing || r.year > existing.year) supplyByISO3.set(r.iso3, r)
+}
 
 // ─── Design tokens ────────────────────────────────────────────────────────────
 

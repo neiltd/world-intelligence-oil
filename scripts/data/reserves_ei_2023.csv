@@ -1,0 +1,44 @@
+iso3,country,year,reserves_bbbl,confidence,notes
+AGO,Angola,2023,7.8,high,EI Statistical Review 2024
+ARE,United Arab Emirates,2023,97.8,high,EI Statistical Review 2024 — OPEC member
+ARG,Argentina,2023,2.5,high,EI Statistical Review 2024
+AUS,Australia,2023,2.4,high,EI Statistical Review 2024
+AZE,Azerbaijan,2023,7.0,high,EI Statistical Review 2024
+BHR,Bahrain,2023,0.1,medium,EI Statistical Review 2024 — small reserves; Bahrain relies heavily on Saudi shared field
+BRA,Brazil,2023,15.0,high,EI Statistical Review 2024
+BRN,Brunei,2023,1.1,high,EI Statistical Review 2024
+CAN,Canada,2023,170.3,high,EI Statistical Review 2024 — includes oil sands (recoverable bitumen)
+CHN,China,2023,26.0,high,EI Statistical Review 2024
+COG,Congo,2023,1.8,high,EI Statistical Review 2024
+COL,Colombia,2023,2.0,high,EI Statistical Review 2024
+DNK,Denmark,2023,0.4,high,EI Statistical Review 2024
+DZA,Algeria,2023,12.2,high,EI Statistical Review 2024 — OPEC member
+ECU,Ecuador,2023,8.3,high,EI Statistical Review 2024
+GAB,Gabon,2023,2.0,high,EI Statistical Review 2024
+GBR,United Kingdom,2023,2.5,high,EI Statistical Review 2024
+GHA,Ghana,2023,0.7,high,EI Statistical Review 2024
+GNQ,Equatorial Guinea,2023,1.1,high,EI Statistical Review 2024 — OPEC member
+IDN,Indonesia,2023,2.5,high,EI Statistical Review 2024
+IND,India,2023,4.4,high,EI Statistical Review 2024
+IRN,Iran,2023,208.6,high,EI Statistical Review 2024 — OPEC member; figures based on self-reported data
+IRQ,Iraq,2023,145.0,high,EI Statistical Review 2024 — OPEC member; figures based on self-reported data
+KAZ,Kazakhstan,2023,30.0,high,EI Statistical Review 2024 — OPEC+ associated member
+KWT,Kuwait,2023,101.5,high,EI Statistical Review 2024 — OPEC member; figures based on self-reported data
+LBY,Libya,2023,48.4,high,EI Statistical Review 2024 — OPEC member
+MEX,Mexico,2023,7.6,high,EI Statistical Review 2024
+MYS,Malaysia,2023,3.6,high,EI Statistical Review 2024
+NGA,Nigeria,2023,36.9,high,EI Statistical Review 2024 — OPEC member
+NOR,Norway,2023,8.1,high,EI Statistical Review 2024
+OMN,Oman,2023,5.4,high,EI Statistical Review 2024
+PNG,Papua New Guinea,2023,0.2,medium,Estimate based on government reports; EI coverage limited
+QAT,Qatar,2023,25.2,high,EI Statistical Review 2024
+RUS,Russia,2023,80.0,high,EI Statistical Review 2024 — post-2022 figure has elevated uncertainty due to sanctions
+SAU,Saudi Arabia,2023,267.0,high,EI Statistical Review 2024 — OPEC member; figures based on self-reported data
+SDN,Sudan,2023,1.5,medium,Post-2011 estimate for rump state; most reserves transferred to South Sudan at independence
+SSD,South Sudan,2023,3.5,medium,Estimate from 2013 post-independence survey; conflict has limited independent verification
+TLS,Timor-Leste,2023,0.5,medium,Timor Sea joint development area estimate; offshore fields
+TTO,Trinidad and Tobago,2023,0.3,high,EI Statistical Review 2024
+USA,United States,2023,68.8,high,EI Statistical Review 2024 — EIA proved reserves 2022 report
+VEN,Venezuela,2023,303.8,high,EI Statistical Review 2024 — largest proved reserves globally; largely extra-heavy oil requiring upgrading; production severely constrained by sanctions and underinvestment
+VNM,Vietnam,2023,4.4,medium,Estimate based on Petrovietnam and IEA data; EI coverage limited
+YEM,Yemen,2023,3.0,medium,Pre-conflict (2015) estimate; active conflict has prevented updated surveys
