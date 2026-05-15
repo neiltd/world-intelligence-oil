@@ -20,7 +20,7 @@
 import { useMemo, useState } from 'react'
 import { Marker } from 'react-map-gl/maplibre'
 import { getHubOilEvents } from '../../data/imports/adapter'
-import { useMapStore } from '../../store/useMapStore'
+import { useMapStore, type HubEventFilters } from '../../store/useMapStore'
 import type { HubOilEvent, HubCoordinateQuality } from '../../types/hub'
 
 // ── Static data (loaded once at module level) ─────────────────────────────────
@@ -167,6 +167,63 @@ function EventTooltip({ t }: { t: TooltipState }) {
   )
 }
 
+// ── Event type legend ─────────────────────────────────────────────────────────
+// Shows only the types present in the currently filtered visible event set.
+// Rendered as an absolute overlay inside WorldMap's relative container.
+
+function getVisibleTypes(filters: HubEventFilters): string[] {
+  const types = new Set<string>()
+  for (const e of HUB_EVENTS) {
+    if (e.lat === undefined || e.lng === undefined) continue
+    if (!baseStyle(e.coordinateQuality, e.severity)) continue
+    if (filters.severityMin > 1 && e.severity < filters.severityMin) continue
+    if (filters.eventType !== null && e.event_type !== filters.eventType) continue
+    if (filters.hormuzOnly && !e.is_hormuz_related) continue
+    if (filters.supplyOnly && !e.is_supply_disruption) continue
+    if (filters.qualityFilter !== null && e.coordinateQuality !== filters.qualityFilter) continue
+    types.add(e.event_type)
+  }
+  return [...types].sort()
+}
+
+export function HubEventLegend() {
+  const { hubEventFilters } = useMapStore()
+  const presentTypes = useMemo(() => getVisibleTypes(hubEventFilters), [hubEventFilters])
+
+  if (presentTypes.length === 0) return null
+
+  return (
+    <div
+      className="absolute z-10 rounded-lg border"
+      style={{
+        top: 8,
+        left: 8,
+        background: '#0E1525CC',
+        borderColor: '#1E2D4A',
+        padding: '8px 10px',
+        backdropFilter: 'blur(4px)',
+      }}
+    >
+      <p className="text-[10px] uppercase tracking-widest font-semibold mb-1.5" style={{ color: '#475569' }}>
+        Events
+      </p>
+      <div className="flex flex-col gap-1">
+        {presentTypes.map(type => (
+          <div key={type} className="flex items-center gap-1.5">
+            <div
+              className="flex-shrink-0 rounded-full"
+              style={{ width: 7, height: 7, background: HUB_EVENT_COLOR[type] ?? '#475569' }}
+            />
+            <span className="text-[10px]" style={{ color: '#94A3B8' }}>
+              {HUB_EVENT_LABEL[type] ?? type}
+            </span>
+          </div>
+        ))}
+      </div>
+    </div>
+  )
+}
+
 // ── Layer ─────────────────────────────────────────────────────────────────────
 
 interface Props { visible: boolean }
@@ -207,7 +264,7 @@ export default function OilEventMarkerLayer({ visible }: Props) {
 
         // Apply focus-state transforms
         const coreSize = isFocused ? Math.round(base.coreSize * 1.45) : base.coreSize
-        const opacity  = focus === 'dimmed' ? 0.18
+        const opacity  = focus === 'dimmed' ? 0.32
                        : focus === 'normal' ? base.opacity
                        : isFocused          ? 1.0
                        : base.opacity * 0.85

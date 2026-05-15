@@ -1,6 +1,6 @@
 import { useMemo } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
-import { useMapStore } from './store/useMapStore'
+import { useMapStore, DEFAULT_HUB_FILTERS } from './store/useMapStore'
 import WorldMap from './components/Map/WorldMap'
 import CountryPanel from './components/Panel/CountryPanel'
 import SearchBar from './components/UI/SearchBar'
@@ -37,7 +37,17 @@ export default function App() {
     selectCountry,
     showIntelligence, toggleIntelligence,
     showEventMarkers, toggleEventMarkers,
+    hubEventFilters,
   } = useMapStore()
+
+  // Count active hub event filters for the badge on the Event markers button
+  const activeFilterCount = [
+    hubEventFilters.severityMin > DEFAULT_HUB_FILTERS.severityMin,
+    hubEventFilters.eventType !== null,
+    hubEventFilters.hormuzOnly,
+    hubEventFilters.supplyOnly,
+    hubEventFilters.qualityFilter !== null,
+  ].filter(Boolean).length
 
   const showPanel  = !!selectedCountryId
   const oilLayerOn = isLayerVisible('oil')
@@ -76,7 +86,6 @@ export default function App() {
           <span className="text-lg">🛢️</span>
           <div className="hidden sm:block">
             <p className="text-xs font-bold text-white leading-none">Oil Intelligence</p>
-            <p className="text-xs leading-none mt-0.5" style={{ color: '#334155' }}>Phase 1 MVP</p>
           </div>
         </div>
 
@@ -137,7 +146,15 @@ export default function App() {
           }}
         >
           <span className="w-1.5 h-1.5 rounded-full" style={{ background: showEventMarkers ? '#EF4444' : '#475569' }} />
-          Events
+          Event markers
+          {activeFilterCount > 0 && (
+            <span
+              className="ml-0.5 px-1 rounded-full font-bold"
+              style={{ background: '#EF444444', color: '#EF4444', fontSize: 9 }}
+            >
+              {activeFilterCount}
+            </span>
+          )}
         </button>
 
         {/* Intelligence toggle */}
@@ -209,7 +226,7 @@ export default function App() {
       </div>
 
       {/* ── Bottom row: price chart + event timeline ────────────────────────── */}
-      <div className="flex flex-shrink-0 overflow-hidden" style={{ height: 240 }}>
+      <div className="flex flex-shrink-0 overflow-hidden" style={{ height: 'clamp(200px, 25vh, 280px)' }}>
 
         <div className="flex-1 min-w-0">
           <OilPriceChart events={filteredEvents} />

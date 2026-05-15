@@ -193,8 +193,8 @@ export default function OilEventTimeline({
               {sorted.length}
             </span>
           </div>
-          <span className="text-[9px]" style={{ color: '#1E3A5F' }}>
-            OPEC · OFAC · EIA · Sample
+          <span className="text-[10px]" style={{ color: '#1E3A5F' }}>
+            OPEC · OFAC · EIA
           </span>
         </div>
 

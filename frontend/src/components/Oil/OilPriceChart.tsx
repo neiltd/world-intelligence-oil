@@ -261,8 +261,8 @@ export default function OilPriceChart({ events }: OilPriceChartProps) {
               {label}
             </button>
           ))}
-          <span className="ml-2 text-[9px]" style={{ color: '#1E3A5F' }}>
-            EIA · World Bank · Sample
+          <span className="ml-2 text-[10px]" style={{ color: '#1E3A5F' }}>
+            EIA · World Bank
           </span>
         </div>
       </div>

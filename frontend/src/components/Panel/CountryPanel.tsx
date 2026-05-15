@@ -196,8 +196,8 @@ const TABS: { id: Tab; label: string }[] = [
 // ─── Main component ───────────────────────────────────────────────────────────
 
 export default function CountryPanel() {
-  const { countryData, loading, error, clearSelection } = useMapStore()
-  const [tab, setTab] = useState<Tab>('overview')
+  const { countryData, loading, error, clearSelection, isLayerVisible } = useMapStore()
+  const [tab, setTab] = useState<Tab>(() => isLayerVisible('oil') ? 'oil' : 'overview')
 
   if (loading) return (
     <div className="flex items-center justify-center h-full">
@@ -347,13 +347,11 @@ export default function CountryPanel() {
                   label="Exports"
                   value={oil.exports}
                   unit="kb/d"
-                  note="Out of scope for v1"
                 />
                 <DetailRow
                   label="Imports"
                   value={oil.imports}
                   unit="kb/d"
-                  note="Out of scope for v1"
                 />
               </div>
             </Sec>
@@ -405,7 +403,7 @@ export default function CountryPanel() {
                   </p>
                 )}
                 <p className="text-[10px]" style={{ color: '#1E3A5F' }}>
-                  Sample data · Replace with live EIA ingestion
+                  EIA · {oil.year}
                 </p>
               </div>
             </Sec>
@@ -420,8 +418,7 @@ export default function CountryPanel() {
                   No oil data for {c.name}
                 </p>
                 <p className="text-[11px] leading-relaxed" style={{ color: '#334155' }}>
-                  This country is not yet in the oil supply dataset.<br />
-                  Gemini will expand coverage in a future update.
+                  No oil supply data available for this country.
                 </p>
               </div>
             </div>

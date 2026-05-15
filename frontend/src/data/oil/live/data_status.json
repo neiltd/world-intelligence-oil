@@ -13,7 +13,14 @@
         "2024-12"
       ],
       "frequency": "monthly",
-      "error_count": 0
+      "error_count": 0,
+      "freshness": {
+        "dataDate": "2024-12-31",
+        "processedAt": "2026-05-12T17:10:13Z",
+        "freshnessCategory": "structural",
+        "staleThreshold": 3,
+        "updateCadence": "monthly"
+      }
     },
     "supply": {
       "source": "EIA Open Data API v2",
@@ -26,7 +33,14 @@
       ],
       "reserves_available": true,
       "error_count": 0,
-      "reserves_source": "EI Statistical Review 2024"
+      "reserves_source": "EI Statistical Review 2024",
+      "freshness": {
+        "dataDate": "2024-12-31",
+        "processedAt": "2026-05-12T17:10:13Z",
+        "freshnessCategory": "structural",
+        "staleThreshold": 150,
+        "updateCadence": "monthly"
+      }
     },
     "reserves": {
       "source": "EI Statistical Review 2024 (curated seed)",

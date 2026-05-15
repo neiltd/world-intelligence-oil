@@ -51,6 +51,19 @@ export type HubEventType =
 
 export type HubRelatedAsset = 'oil' | 'gas' | 'chokepoint' | 'infrastructure'
 
+// ─── Freshness Types ──────────────────────────────────────────────────────────
+
+export type FreshnessCategory = 'fresh' | 'delayed' | 'structural' | 'stale'
+export type UpdateCadence = 'hourly' | 'daily' | 'weekly' | 'monthly' | 'annual'
+
+export interface DatasetFreshness {
+  dataDate:          string  // ISO 8601 YYYY-MM-DD
+  processedAt:       string  // ISO 8601 when this data was ingested/exported
+  freshnessCategory: FreshnessCategory
+  staleThreshold:    number  // days
+  updateCadence:     UpdateCadence
+}
+
 // ─── Hub Oil Event ────────────────────────────────────────────────────────────
 // Delivered via: data/imports/oil-events.json → { events: HubOilEvent[] }
 

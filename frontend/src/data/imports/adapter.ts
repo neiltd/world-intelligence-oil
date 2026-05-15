@@ -36,6 +36,7 @@ import type {
   ShippingDisruption,
   RefineryOutage,
   GeopoliticalSupplyRiskEvent,
+  DatasetFreshness,
 } from '../../types/hub'
 
 // ── Hub imports ───────────────────────────────────────────────────────────────
@@ -153,11 +154,11 @@ export interface HubStatus {
   eventCount:   number
   indicatorCount: number
   datasets: {
-    oilEvents:  boolean
-    indicators: boolean
-    shipping:   boolean
-    outages:    boolean
-    supplyRisk: boolean
+    oilEvents:  { active: boolean, freshness?: DatasetFreshness }
+    indicators: { active: boolean, freshness?: DatasetFreshness }
+    shipping:   { active: boolean, freshness?: DatasetFreshness }
+    outages:    { active: boolean, freshness?: DatasetFreshness }
+    supplyRisk: { active: boolean, freshness?: DatasetFreshness }
   }
 }
 
@@ -168,11 +169,11 @@ export function getHubStatus(): HubStatus {
     eventCount:     _hubOilEvents.length,
     indicatorCount: _hubIndicators.length,
     datasets: {
-      oilEvents:  _hubOilEvents.length > 0,
-      indicators: _hubIndicators.length > 0,
-      shipping:   hubLive(hubShipping  as unknown[]),
-      outages:    hubLive(hubOutages   as unknown[]),
-      supplyRisk: hubLive(hubSupplyRisk as unknown[]),
+      oilEvents:  { active: _hubOilEvents.length > 0 },
+      indicators: { active: _hubIndicators.length > 0 },
+      shipping:   { active: hubLive(hubShipping  as unknown[]) },
+      outages:    { active: hubLive(hubOutages   as unknown[]) },
+      supplyRisk: { active: hubLive(hubSupplyRisk as unknown[]) },
     },
   }
 }

@@ -7,7 +7,7 @@ import * as topojson from 'topojson-client'
 import { useMapStore } from '../../store/useMapStore'
 import { fixFeatureCollection } from '../../utils/geoUtils'
 import OilMapLayer, { getOilChoroplethColor, getOilTooltipData } from './OilMapLayer'
-import OilEventMarkerLayer from './OilEventMarkerLayer'
+import OilEventMarkerLayer, { HubEventLegend } from './OilEventMarkerLayer'
 import HubEventFilterBar from './HubEventFilterBar'
 import { getHubOilEvents } from '../../data/imports/adapter'
 
@@ -209,6 +209,9 @@ export default function WorldMap() {
 
       {/* Oil choropleth legend */}
       {oilLayerActive && <OilMapLayer metric={oilMetric} />}
+
+      {/* Event type legend — only when markers are visible */}
+      {showEventMarkers && <HubEventLegend />}
 
       {/* Hub event filter bar — only when markers are visible */}
       {showEventMarkers && <HubEventFilterBar />}
